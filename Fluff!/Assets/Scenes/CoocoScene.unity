@@ -162,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 8358952295221929953, guid: e182f37ccaad2d344b7eda6472dcf1d3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8358952295221929953, guid: e182f37ccaad2d344b7eda6472dcf1d3,
         type: 3}
@@ -237,7 +237,7 @@ PrefabInstance:
     - target: {fileID: 4702662184197982705, guid: e1c55534daf48e242b72eeca01c6e2fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4702662184197982705, guid: e1c55534daf48e242b72eeca01c6e2fe,
         type: 3}
@@ -359,7 +359,7 @@ PrefabInstance:
     - target: {fileID: 1523475296989791943, guid: 96a4b5e839f3e3b4d9de12f10039ec02,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1523475296989791943, guid: 96a4b5e839f3e3b4d9de12f10039ec02,
         type: 3}
@@ -481,7 +481,7 @@ PrefabInstance:
     - target: {fileID: 417457199113619699, guid: cbea4a95f0676124e9e2982fb7368e8a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 417457199113619699, guid: cbea4a95f0676124e9e2982fb7368e8a,
         type: 3}
@@ -609,7 +609,7 @@ PrefabInstance:
     - target: {fileID: 6662745253827398716, guid: 0f89ebe4852f4b445b8da33a1e98e03f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6662745253827398716, guid: 0f89ebe4852f4b445b8da33a1e98e03f,
         type: 3}
@@ -710,7 +710,7 @@ PrefabInstance:
     - target: {fileID: 6977441598913784949, guid: 755baf4007e771b45944475a943018a1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6977441598913784949, guid: 755baf4007e771b45944475a943018a1,
         type: 3}
@@ -893,7 +893,7 @@ PrefabInstance:
     - target: {fileID: 1088945807868415513, guid: 03bf6cfda36979d46b0596203421da62,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1088945807868415513, guid: 03bf6cfda36979d46b0596203421da62,
         type: 3}
@@ -1015,7 +1015,7 @@ PrefabInstance:
     - target: {fileID: 3757844135399879280, guid: 3a1a2af417b570f44827a78a4a97f435,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3757844135399879280, guid: 3a1a2af417b570f44827a78a4a97f435,
         type: 3}
@@ -1154,26 +1154,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5018429381465866892, guid: 152eadd31ffa94944ac69f3a7bb76581,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018429381465866892, guid: 152eadd31ffa94944ac69f3a7bb76581,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018429381465866892, guid: 152eadd31ffa94944ac69f3a7bb76581,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5018429381465866892, guid: 152eadd31ffa94944ac69f3a7bb76581,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 152eadd31ffa94944ac69f3a7bb76581, type: 3}
 --- !u!1 &1782438201 stripped
@@ -1229,22 +1209,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.6400127, y: 7.6923485}
   m_EdgeRadius: 0
---- !u!95 &1782438204
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782438201}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0177726822e3d184e9aa87e41e5dca05, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
