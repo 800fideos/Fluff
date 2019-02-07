@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Cinta : MonoBehaviour
 {
-    float fuerza = 200f;
+    public float fuerza = 0f;
+    public Vector2 direccion = Vector2.left;
 
     void Start()
     {
@@ -15,8 +16,7 @@ public class Cinta : MonoBehaviour
     {
         if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas"))
         {
-            Debug.Log("ok");
-            col.GetComponent<Rigidbody2D>().AddForce(Vector2.left * fuerza);
+            col.GetComponent<Rigidbody2D>().AddForce(direccion * fuerza);
         }
     }
 }
