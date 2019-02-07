@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Normal
+  - Confuso
+  - "Dormil\xF3n"
+  - Mojado
+  - Calvito
+  - "El\xE9ctrico"
+  - Fuerte
+  - Unido
+  - "L\xEDmite"
   layers:
   - Default
   - TransparentFX
@@ -13,7 +22,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Pelusas
   - 
   - 
   - 
