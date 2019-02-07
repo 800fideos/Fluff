@@ -496,6 +496,7 @@ GameObject:
   - component: {fileID: 202407178}
   - component: {fileID: 202407180}
   - component: {fileID: 202407179}
+  - component: {fileID: 202407181}
   m_Layer: 5
   m_Name: MarcoSalon
   m_TagString: Untagged
@@ -559,6 +560,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202407177}
   m_CullTransparentMesh: 0
+--- !u!114 &202407181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202407177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.5019608, g: 0.43529415, b: 0.35686275, a: 0.30588236}
+  m_EffectDistance: {x: -15.48, y: 15.58}
+  m_UseGraphicAlpha: 1
 --- !u!1 &229817162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,6 +1464,7 @@ GameObject:
   - component: {fileID: 879385277}
   - component: {fileID: 879385279}
   - component: {fileID: 879385278}
+  - component: {fileID: 879385280}
   m_Layer: 5
   m_Name: "MarcoBa\xF1o"
   m_TagString: Untagged
@@ -1511,6 +1528,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879385276}
   m_CullTransparentMesh: 0
+--- !u!114 &879385280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879385276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.5058824, g: 0.43529415, b: 0.35686275, a: 0.30588236}
+  m_EffectDistance: {x: -17.33, y: 8.23}
+  m_UseGraphicAlpha: 1
 --- !u!1 &952979782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,6 +1633,7 @@ GameObject:
   - component: {fileID: 1140262428}
   - component: {fileID: 1140262430}
   - component: {fileID: 1140262429}
+  - component: {fileID: 1140262431}
   m_Layer: 5
   m_Name: MarcoCocina
   m_TagString: Untagged
@@ -1664,6 +1697,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140262427}
   m_CullTransparentMesh: 0
+--- !u!114 &1140262431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140262427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.48235297, g: 0.41960788, b: 0.34901962, a: 0.30588236}
+  m_EffectDistance: {x: -17.08, y: 16.11}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1152151420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,6 +1797,7 @@ GameObject:
   - component: {fileID: 1265643746}
   - component: {fileID: 1265643748}
   - component: {fileID: 1265643747}
+  - component: {fileID: 1265643749}
   m_Layer: 5
   m_Name: MarcoDesvan
   m_TagString: Untagged
@@ -1812,6 +1861,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265643745}
   m_CullTransparentMesh: 0
+--- !u!114 &1265643749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265643745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.52156866, g: 0.49803925, b: 0.4156863, a: 0.30588236}
+  m_EffectDistance: {x: -25.05, y: 15.11}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1305739980
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,6 +3284,7 @@ GameObject:
   - component: {fileID: 1772300455}
   - component: {fileID: 1772300457}
   - component: {fileID: 1772300456}
+  - component: {fileID: 1772300458}
   m_Layer: 5
   m_Name: MarcoJardin
   m_TagString: Untagged
@@ -3283,6 +3348,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772300454}
   m_CullTransparentMesh: 0
+--- !u!114 &1772300458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772300454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.49803925, g: 0.43137258, b: 0.36862746, a: 0.30588236}
+  m_EffectDistance: {x: -21.91, y: 12.78}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1799345345
 GameObject:
   m_ObjectHideFlags: 0
