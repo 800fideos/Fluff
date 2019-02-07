@@ -16,7 +16,6 @@ public class Cinta : MonoBehaviour
     {
         if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas"))
         {
-            Debug.Log("ok" + fuerza);
             col.GetComponent<Rigidbody2D>().AddForce(direccion * fuerza);
         }
     }
