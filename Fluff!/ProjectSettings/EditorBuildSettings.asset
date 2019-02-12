@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/seleccionmundos.unity
     guid: d1cd60be0e06c8d488b02fc13a4ec68e
   - enabled: 1
-    path: Assets/Scenes/mundo1.unity
+    path: Assets/Scenes/Mundo1_Desvan/mundo1.unity
     guid: a4cfdb98e4769ae4382e6a3e58964dde
   - enabled: 1
     path: Assets/Scenes/Mundo1_Desvan/Mundo1_Nivel1.unity
