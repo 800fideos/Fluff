@@ -4,7 +4,15 @@ using UnityEngine;
 
 public class Clonador : MonoBehaviour
 {
-    // Start is called before the first frame update
+	//public float fuerza = 0f;
+	//public Vector2 direccion = Vector2.left;
+
+	public Transform entrega1;
+	public Transform entrega2;
+	public Transform entrega3;
+
+	GameObject pelusa;
+
     void Start()
     {
         
@@ -15,4 +23,31 @@ public class Clonador : MonoBehaviour
     {
         
     }
+
+	void OnTriggerEnter2D (Collider2D col)
+	{
+		var tag = col.transform.tag;
+		pelusa = col.gameObject;
+		GeneraPelusa ();
+		Destroy (col.gameObject);
+	}
+
+	void GeneraPelusa ()
+	{
+		GameObject pelusaClon;
+		Rigidbody2D rbpelusa;
+		Vector2 fuerza;
+
+		pelusaClon = Instantiate (pelusa, entrega1.position, entrega1.rotation);
+		pelusaClon = Instantiate (pelusa, entrega2.position, entrega2.rotation);
+		pelusaClon = Instantiate (pelusa, entrega3.position, entrega3.rotation);
+
+		fuerza.x = 100f;
+		fuerza.y = 100f;
+
+		rbpelusa = pelusaClon.GetComponent<Rigidbody2D> ();
+		rbpelusa.AddForce (fuerza);
+
+
+	}
 }
