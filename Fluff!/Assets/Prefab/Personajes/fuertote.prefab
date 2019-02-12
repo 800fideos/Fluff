@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5612341006656973860}
   - component: {fileID: 7756322221211425096}
   - component: {fileID: 8332617750341398894}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fuertote
   m_TagString: Untagged
   m_Icon: {fileID: 0}

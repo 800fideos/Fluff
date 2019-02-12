@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2918437091921386973}
   - component: {fileID: 4596042705059404106}
   - component: {fileID: 7909981644639370421}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dormido
   m_TagString: Untagged
   m_Icon: {fileID: 0}

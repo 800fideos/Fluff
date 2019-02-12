@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3536298334756279254}
   - component: {fileID: 3536298334756279255}
   - component: {fileID: 3536298334756279240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: calvo
   m_TagString: Untagged
   m_Icon: {fileID: 0}

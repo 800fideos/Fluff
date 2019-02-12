@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7209257168204897736}
   - component: {fileID: 432512467}
   - component: {fileID: 432512468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mojado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
