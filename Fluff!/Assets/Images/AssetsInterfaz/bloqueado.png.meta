@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 5b26c16d98763574386c3b75174d0c12
+guid: fd389468f72571e43a09f8d2c0fe27ed
 TextureImporter:
   fileIDToRecycleName:
-    21300000: bloqueado2_0
+    21300000: bloqueado_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -96,13 +96,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bloqueado2_0
+      name: bloqueado_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 711
-        height: 711
+        width: 552
+        height: 512
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,7 +110,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39a746e6e6f82cc4d838d755fbeb6629
+      spriteID: c55a7447e8896e140857fcfea4acdf6d
       vertices: []
       indices: 
       edges: []
@@ -118,7 +118,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7c9de63aa09c12a4094849c0d4af5f7c
+    spriteID: a86aa5aa332baf041ac8bf7f271722e1
     vertices: []
     indices: 
     edges: []

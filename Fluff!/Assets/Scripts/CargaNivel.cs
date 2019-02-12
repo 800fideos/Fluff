@@ -27,27 +27,27 @@ public class CargaNivel : MonoBehaviour
     public void CargaMundo2()
     {
         //IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
-        SceneManager.LoadScene("mundo2");
+        SceneManager.LoadScene("mundo2seleccion");
     }
 
 
     public void CargaMundo3()
     {
         //IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
-        SceneManager.LoadScene("mundo3");
+        SceneManager.LoadScene("mundo3seleccion");
     }
 
 
     public void CargaMundo4()
     {
         //IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
-        SceneManager.LoadScene("mundo4");
+        SceneManager.LoadScene("mundo4seleccion");
     }
 
 
     public void CargaMundo5()
     {
         //IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
-        SceneManager.LoadScene("mundo5");
+        SceneManager.LoadScene("mundo5seleccion");
     }
 }
