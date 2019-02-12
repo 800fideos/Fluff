@@ -12,7 +12,9 @@ public class Movimiento : MonoBehaviour
     Vector2 vector_fin;
     Vector2 resta_vector;
 
-    
+    //prepucio de mario sabroson
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
