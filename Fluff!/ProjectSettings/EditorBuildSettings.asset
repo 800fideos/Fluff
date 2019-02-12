@@ -65,4 +65,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mundo5_Jardin/Mundo5_Nivel5.unity
     guid: a48b3e61c1d60104881726dfd0ca0636
+  - enabled: 1
+    path: Assets/Scenes/Mundo4_Cocina/mundo4seleccion.unity
+    guid: 9e87b157cf690114abb2c48591c97a55
+  - enabled: 1
+    path: Assets/Scenes/Mundo4_Cocina/Mundo4_Nivel1.unity
+    guid: 223e52f01626a9a4487554c8eefd6f59
+  - enabled: 1
+    path: Assets/Scenes/Mundo4_Cocina/Mundo4_Nivel2.unity
+    guid: e5fdc6030d3ba274ba534652a12a75ff
+  - enabled: 1
+    path: Assets/Scenes/Mundo4_Cocina/Mundo4_Nivel3.unity
+    guid: ce19a2e508bdfd6429de20e46f75ef92
+  - enabled: 1
+    path: Assets/Scenes/Mundo4_Cocina/Mundo4_Nivel4.unity
+    guid: 891902c4f45b39749977e2e0fc79f1c0
+  - enabled: 1
+    path: Assets/Scenes/Mundo4_Cocina/Mundo4_Nivel5.unity
+    guid: 035fc1826a005db41b11f1726e1f72c2
   m_configObjects: {}
