@@ -7,9 +7,13 @@ public class Clonador : MonoBehaviour
 	//public float fuerza = 0f;
 	//public Vector2 direccion = Vector2.left;
 
-	public Transform entrega1;
-	public Transform entrega2;
-	public Transform entrega3;
+	public Transform entregaArriba;
+	public Transform entregaAbajo;
+	public Transform entregaDerecha;
+	public Transform entregaIzquierda;
+
+	public float fuerza = 100f;
+	public Vector2 direccion = Vector2.left;
 
 	GameObject pelusa;
 
@@ -26,28 +30,50 @@ public class Clonador : MonoBehaviour
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
-		var tag = col.transform.tag;
-		pelusa = col.gameObject;
-		GeneraPelusa ();
+		if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas"))
+		{
+			pelusa = col.gameObject;
+		}
+
 		Destroy (col.gameObject);
+		GeneraPelusa ();
+
 	}
 
 	void GeneraPelusa ()
 	{
-		GameObject pelusaClon;
-		Rigidbody2D rbpelusa;
-		Vector2 fuerza;
+		GameObject pelusaClonArriba;
+		GameObject pelusaClonAbajo;
+		GameObject pelusaClonDerecha;
+		GameObject pelusaClonIzquierda;
 
-		pelusaClon = Instantiate (pelusa, entrega1.position, entrega1.rotation);
-		pelusaClon = Instantiate (pelusa, entrega2.position, entrega2.rotation);
-		pelusaClon = Instantiate (pelusa, entrega3.position, entrega3.rotation);
+		Rigidbody2D rbpelusaArriba;
+		Rigidbody2D rbpelusaAbajo;
+		Rigidbody2D rbpelusaDerecha;
+		Rigidbody2D rbpelusaIzquierda;
 
-		fuerza.x = 100f;
-		fuerza.y = 100f;
+		if (entregaArriba != null) {
+			pelusaClonArriba = Instantiate (pelusa, entregaArriba.position, entregaArriba.rotation);
+			rbpelusaArriba = pelusaClonArriba.GetComponent<Rigidbody2D> ();
+			rbpelusaArriba.AddForce (Vector2.up * fuerza);
+		}
+	
+		if (entregaAbajo != null) {
+			pelusaClonAbajo = Instantiate (pelusa, entregaAbajo.position, entregaAbajo.rotation);
+			rbpelusaAbajo = pelusaClonAbajo.GetComponent<Rigidbody2D> ();
+			rbpelusaAbajo.AddForce (Vector2.up * -fuerza);
+		}
 
-		rbpelusa = pelusaClon.GetComponent<Rigidbody2D> ();
-		rbpelusa.AddForce (fuerza);
+		if (entregaDerecha != null) {
+			pelusaClonDerecha = Instantiate (pelusa, entregaDerecha.position, entregaDerecha.rotation);
+			rbpelusaDerecha = pelusaClonDerecha.GetComponent<Rigidbody2D> ();
+			rbpelusaDerecha.AddForce (Vector2.left * -fuerza);
+		}
 
-
+		if (entregaIzquierda != null) {
+			pelusaClonIzquierda = Instantiate (pelusa, entregaIzquierda.position, entregaIzquierda.rotation);
+			rbpelusaIzquierda = pelusaClonIzquierda.GetComponent<Rigidbody2D> ();
+			rbpelusaIzquierda.AddForce (Vector2.left * fuerza);
+		}
 	}
 }

@@ -256,6 +256,8 @@ MonoBehaviour:
   OffSprite: {fileID: 21300000, guid: 99f39b220e8150948b6222d2673a8c96, type: 3}
   OnSprite: {fileID: 21300000, guid: 801378f22851c214caa344120692799b, type: 3}
   but: {fileID: 32605183}
+  camaraMenu: {fileID: 0}
+  menuPrincipal: {fileID: 0}
 --- !u!1 &94262796
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +402,8 @@ MonoBehaviour:
   OffSprite: {fileID: 21300000, guid: f6c766c907151ca418513bf4963d1e2e, type: 3}
   OnSprite: {fileID: 21300000, guid: 373af14c7a35d124f8e8257b1b291ac1, type: 3}
   but: {fileID: 94262798}
+  camaraMenu: {fileID: 0}
+  menuPrincipal: {fileID: 0}
 --- !u!1 &100797708
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,7 +735,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &343313722
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1994,7 +1998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1691505261
 RectTransform:
   m_ObjectHideFlags: 0
