@@ -18,6 +18,8 @@ public class Muelle : MonoBehaviour
 	{
 		if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas"))
 		{
+			col.gameObject.GetComponent<Rigidbody2D>().AddForce(direccion * fuerza);
+
 			animacion.SetTrigger ("rebote");
 		}
 	}

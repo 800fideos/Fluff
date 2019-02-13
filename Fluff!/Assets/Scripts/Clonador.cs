@@ -12,6 +12,9 @@ public class Clonador : MonoBehaviour
 	public Transform entregaDerecha;
 	public Transform entregaIzquierda;
 
+	static float temporizador = 0f;
+	float tiempoPausa = 1f;
+
 	public float fuerza = 100f;
 	public Vector2 direccion = Vector2.left;
 
@@ -22,11 +25,7 @@ public class Clonador : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
@@ -35,9 +34,14 @@ public class Clonador : MonoBehaviour
 			pelusa = col.gameObject;
 		}
 
-		Destroy (col.gameObject);
-		GeneraPelusa ();
 
+
+		if(Time.time > temporizador) {
+			GeneraPelusa ();
+			temporizador = Time.time + tiempoPausa;
+		}
+
+		col.gameObject.SetActive (false);
 	}
 
 	void GeneraPelusa ()
