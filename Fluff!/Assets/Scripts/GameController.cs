@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class BotonPausa : MonoBehaviour
+public class GameController : MonoBehaviour
 {
-	public static bool pausa = true;
+	public static bool pausa = false;
 	public GameObject camaraMenu;
 	public GameObject menuPrincipal;
     // Start is called before the first frame update
@@ -15,7 +15,8 @@ public class BotonPausa : MonoBehaviour
     }
 
     // Update is called once per frame
-	void Update () {
+    void Update()
+    {
 		if (pausa) {
 			Time.timeScale = 0f;
 
@@ -24,7 +25,13 @@ public class BotonPausa : MonoBehaviour
 		else {
 			Time.timeScale = 1f;
 		}
-			
+    }
+
+
+	public void Recarga()
+	{
+		//IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 
 	public void IniciarJuego(){
