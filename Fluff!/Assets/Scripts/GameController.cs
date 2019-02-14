@@ -37,7 +37,6 @@ public class GameController : MonoBehaviour
 	public void IniciarJuego(){
 
 		pausa = false;
-		camaraMenu.SetActive (false);
 		menuPrincipal.SetActive (false);
 	}
 

@@ -260,6 +260,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1451923140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2633033635118444214, guid: 86afc1aa50b4ada4ba02030f90084006,
+    type: 3}
+  m_PrefabInstance: {fileID: 2282788143308400680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2282788143308400680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -377,5 +383,15 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2282788143308400683, guid: 86afc1aa50b4ada4ba02030f90084006,
+        type: 3}
+      propertyPath: camaraMenu
+      value: 
+      objectReference: {fileID: 642380261}
+    - target: {fileID: 2282788143308400683, guid: 86afc1aa50b4ada4ba02030f90084006,
+        type: 3}
+      propertyPath: menuPrincipal
+      value: 
+      objectReference: {fileID: 1451923140}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86afc1aa50b4ada4ba02030f90084006, type: 3}
