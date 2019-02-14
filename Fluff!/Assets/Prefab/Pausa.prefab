@@ -434,18 +434,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6798785665782394395}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8072423408328798399}
-        m_MethodName: IniciarJuego
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &8072423408328798399
@@ -579,7 +568,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6019955563314933240}
-        m_MethodName: IniciarJuego
+        m_MethodName: Recarga
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

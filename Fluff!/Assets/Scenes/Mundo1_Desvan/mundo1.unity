@@ -506,7 +506,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 825118964}
-        m_MethodName: CargaNivel1
+        m_MethodName: CargaNivel4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -713,7 +713,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 850722093}
-        m_MethodName: CargaNivel1
+        m_MethodName: CargaNivel2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1755,7 +1755,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1850802498}
-        m_MethodName: CargaNivel1
+        m_MethodName: CargaNivel3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2013,7 +2013,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2049245276}
-        m_MethodName: CargaNivel1
+        m_MethodName: CargaNivel5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
