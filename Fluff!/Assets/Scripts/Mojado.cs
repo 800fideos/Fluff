@@ -31,10 +31,14 @@ public class Mojado : MonoBehaviour
             if (primerCharco)
             {
                 Debug.Log(velocidadActual);
-                charcoNuevo = Instantiate(charcoPrefab, new Vector3(transform.position.x,transform.position.y, -0.5f), transform.rotation);
+                SoltarCharco(new Vector3(transform.position.x, transform.position.y, -0.5f), Vector3.zero);
                 primerCharco = false;
             }
             RastroAgua();
+        }
+        else
+        {
+            primerCharco = true;
         }
     }
 
@@ -44,29 +48,31 @@ public class Mojado : MonoBehaviour
         Vector3 posicionCharco = new Vector3(transform.position.x, transform.position.y, - 0.5f);
         if (rb.velocity.x > 0f && transform.position.x > posicionInicial.x + 1.5f)
         {
-            charcoNuevo = Instantiate(charcoPrefab, posicionCharco, transform.rotation);
-            //posicionSiguienteCharco = new Vector3(transform.position.x + 1f, transform.position.y, transform.position.z);
+            SoltarCharco(posicionCharco, Vector3.zero);
             posicionInicial = posicionCharco;
         }
         if (rb.velocity.x < 0f && transform.position.x < posicionInicial.x - 1.5f)
         {
-            charcoNuevo = Instantiate(charcoPrefab, posicionCharco, transform.rotation);
-            //posicionSiguienteCharco = new Vector3(transform.position.x - 1f, transform.position.y, transform.position.z);
+            SoltarCharco(posicionCharco, Vector3.zero);
             posicionInicial = posicionCharco;
         }
         if(rb.velocity.y > 0f && transform.position.y > posicionInicial.y + 1.5f)
         {
-            charcoNuevo = Instantiate(charcoPrefab, posicionCharco, transform.rotation);
-            charcoNuevo.transform.Rotate(new Vector3(0, 90, 0));
-            //posicionSiguienteCharco = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+            SoltarCharco(posicionCharco, new Vector3(0, 0, 90));
             posicionInicial = posicionCharco;
         }
         if (rb.velocity.y < 0f && transform.position.y < posicionInicial.y - 1.5f)
         {
-            charcoNuevo = Instantiate(charcoPrefab, transform.position, transform.rotation);
-            charcoNuevo.transform.Rotate(new Vector3 (0,90,0));
-            //posicionSiguienteCharco = new Vector3(transform.position.x, transform.position.y - 1, transform.position.z);
+            SoltarCharco(posicionCharco, new Vector3(0, 0, 90));
             posicionInicial = posicionCharco;
         }
     }
+
+    void SoltarCharco(Vector3 posicion, Vector3 rotacion)
+    {
+        charcoNuevo = Instantiate(charcoPrefab, posicion, transform.rotation);
+        charcoNuevo.transform.Rotate(rotacion);
+        charcoNuevo.GetComponent<ParaPelusas>().SetPadre(gameObject);
+    }
+
 }

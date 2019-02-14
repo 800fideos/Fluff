@@ -59,22 +59,22 @@ public class Movimiento : MonoBehaviour
         {
             if (resta_vector.y > 0)
             {
-                rb.AddForce(Vector2.up * fuerza_movimiento);
+                rb.velocity = (Vector2.up * fuerza_movimiento);
             }
             else
             {
-                rb.AddForce(Vector2.up * -fuerza_movimiento);
+                rb.velocity = (Vector2.up * -fuerza_movimiento);
             }
         }
         if (Mathf.Abs(resta_vector.y) < Mathf.Abs(resta_vector.x))
         {
             if (resta_vector.x > 0)
             {
-                rb.AddForce(Vector2.right * fuerza_movimiento);
+                rb.velocity = (Vector2.right * fuerza_movimiento);
             }
             else
             {
-                rb.AddForce(Vector2.right * -fuerza_movimiento);
+                rb.velocity = (Vector2.right * -fuerza_movimiento);
             }
         }
     }
