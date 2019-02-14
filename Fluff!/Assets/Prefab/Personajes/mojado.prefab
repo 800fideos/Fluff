@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7209257168204897736}
   - component: {fileID: 432512467}
   - component: {fileID: 432512468}
+  - component: {fileID: 5094977420693815710}
   m_Layer: 8
   m_Name: mojado
   m_TagString: Untagged
@@ -129,7 +130,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &432512467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +146,8 @@ MonoBehaviour:
   charcoPrefab: {fileID: 7827858771395093667, guid: a85fd0a5c5444d147a02c5bc1129ce8b,
     type: 3}
   posicionSiguienteCharco: {x: 0, y: 0, z: 0}
+  primerCharco: 1
+  velocidadActual: 0
 --- !u!114 &432512468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,4 +160,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23407783ca673fd43bc78975d38aa15f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuerza_movimiento: 500
+  fuerza_movimiento: 5
+--- !u!114 &5094977420693815710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5599641287602458088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634aec4c0cf9b964d8a3c88ea4b01b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
