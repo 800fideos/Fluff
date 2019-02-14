@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParaPelusas : MonoBehaviour
+public class UnionPelusas : MonoBehaviour
 {
 
     void Start()
@@ -15,11 +15,11 @@ public class ParaPelusas : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas"))
         {
-            col.transform.position = transform.position;
+            col.transform.parent = transform;
         }
     }
 }
