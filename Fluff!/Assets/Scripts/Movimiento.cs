@@ -7,7 +7,7 @@ public class Movimiento : MonoBehaviour
 {
     Rigidbody2D rb;
 
-    public float fuerza_movimiento = 500f;
+    public float fuerza_movimiento = 5f;
     Vector2 vector_inicio;
     Vector2 vector_fin;
     Vector2 resta_vector;
