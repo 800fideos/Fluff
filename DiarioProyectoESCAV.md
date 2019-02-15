@@ -6,36 +6,47 @@
 * #60 Script de movimiento de los personajes.
 * #71 Script de habilidad especial del personaje "mojado".
 * #73 Creación del personaje "mojado".
-<<<<<<< HEAD
-* #
-
-#### Miguel
-
-* #23 
-Colonador
-* #125 Crear rastro mojado
-* #68 Creación Dormilón
-* #16 Pastilla de jabón
-* #10 Pasta de dientes
-* #15 Patito de goma
-* #63 Creacion Fuertes
-* #58 Creación Normal
-* #62 Creación Confuso
-* #59 Creación Calvito
-* #12 Papel Higienico
-* #74 Distribución de Props Desván, Nivel 1
-* #75 Distribución de Props Desván, Nivel 2
-* #76 Distribución de Props Desván, Nivel 3
-* #77 Distribución de Props Desván, Nivel 4
-* #78 Distribución de Props Desván, Nivel 5
-* #123 Reescalado de Sprites
-*(Tareas que no están en hacknplan: ) Creación Uniones Personajes
-
-
-
+* #26 Ayuda con el script del prop botón y muro. 
 * #72 Script de unión de las pelusas. (INCOMPLETO)
+
+#### Daniel
+* #9 Olla
+* #11 Fogones
+* #13 Mesa cuadrada2
+* #14 Nevera
+* #100 Colocación de botones
+* #102 Colocación Título
+* #103 Script Recarga de Nivel
+* #104 Script de carga de nivel seleccionado
+* #105 Distribución de la Pantalla de mundo
+* #106 Script apertura menú de pausa
+* #107 Script Reanudar juego
+* #108 Script carga siguiente nivel
+* #109 Colocación de botones de sonido
+* #110 Creación Botón (Volver, hacerlo funcional)
+* #111 Creación de Pantalla
+* #112 Creación de Botón (Start, hacerlo funcional)
+* #115 Creación de Botón (Ajustes, hacerlo funcional)
+* #118 Creación Botón (Créditos, hacerlo funcional)
+* #119 Creación de Pantalla (Menú Pausa)
+* #120 Colocación de botones (Menú Pausa)
+* #124 Selección de niveles (Funcional)
+* #126 Arreglar Interfaz
+
+Además de esto he estado rediseñando pantallas del menú y retocando assets gráficos para hacerlos útiles para Unity, programé toda la interfaz desde el menú principal hasta los niveles en los que el menú de pausa te permite una serie de opciones.
+
+#### Oufan
+* #20 Diseño, animación y script del prop especial Bloque de Hielo
+* #23 Script del prop especial de Clonador 
+* #25 Diseño del prop especial de Unidirección
+* #27 Diseño y script del prop especial Cinta
+* #24 Diseño, animación y script del prop especial Muelle (INCOMPLETO)
+* #26 Diseño, animación y script del prop especial Botón + Muro (INCOMPLETO)
+
 ### Retrospectiva del sprint
 #### Problemas que han surgido
+* #1 Los sprites no eran del tamaño adecuado y hubo que reescalarlos todos. 
+* #2 Los fondos no eran del tamaño adecuado y hubo que adaptarlos también.
+* #3 
 #### Posibles soluciones 
 #### Se han completado todas las tareas? Si la respuesta es no, por qué no?
-
