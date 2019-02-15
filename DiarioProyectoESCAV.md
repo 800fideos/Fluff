@@ -39,6 +39,13 @@ Además de esto he estado rediseñando pantallas del menú y retocando assets gr
 #### Problemas que han surgido
 * #1 Los sprites no eran del tamaño adecuado y hubo que reescalarlos todos. 
 * #2 Los fondos no eran del tamaño adecuado y hubo que adaptarlos también.
-* #3 
+* #3 Los menús se rompieron al no programarlos adecuadamente, por tanto, hubo que reprogramarlos.
+* #4 El script de la habilidad del personaje mojado ha llevado más tiempo del esperado.
+* #5 Algunos de los props especiales desaparecieron de algunas escenas.
 #### Posibles soluciones 
+* #1 Se reescalaron los sprites. (SOLUCIONADO)
+* #2 Se adaptaron los fondos de forma correcta. (SOLUCIONADO) 
+* #3 Se volvieron a reprogramar de forma correcta. (SOLUCIONADO)
+* #4 Aunque tardando más de lo esperado el personaje mojado ya usa su habilidad de forma correcta. (SOLUCIONADO)
+* #5 Se volvieron a crear y colocar esos props especiales. (SOLUCIONADO)
 #### Se han completado todas las tareas? Si la respuesta es no, por qué no?
