@@ -6,7 +6,6 @@
 * #60 Script de movimiento de los personajes.
 * #71 Script de habilidad especial del personaje "mojado".
 * #73 Creación del personaje "mojado".
-<<<<<<< HEAD
 * #
 
 #### Miguel
