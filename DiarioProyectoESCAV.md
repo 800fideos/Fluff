@@ -9,7 +9,7 @@
 * #26 Ayuda con el script del prop botón y muro. 
 * #72 Script de unión de las pelusas. (INCOMPLETO)
 
-####Daniel
+#### Daniel
 * #9 Olla
 * #11 Fogones
 * #13 Mesa cuadrada2
@@ -37,5 +37,8 @@ Además de esto he estado rediseñando pantallas del menú y retocando assets gr
 
 ### Retrospectiva del sprint
 #### Problemas que han surgido
+* #1 Los sprites no eran del tamaño adecuado y hubo que reescalarlos todos. 
+* #2 Los fondos no eran del tamaño adecuado y hubo que adaptarlos también.
+* #3 
 #### Posibles soluciones 
 #### Se han completado todas las tareas? Si la respuesta es no, por qué no?
