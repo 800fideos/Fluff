@@ -6,7 +6,7 @@
 * #60 Script de movimiento de los personajes.
 * #71 Script de habilidad especial del personaje "mojado".
 * #73 Creación del personaje "mojado".
-* #
+* #72 Script de unión de las pelusas. (INCOMPLETO)
 ### Retrospectiva del sprint
 #### Problemas que han surgido
 #### Posibles soluciones 
