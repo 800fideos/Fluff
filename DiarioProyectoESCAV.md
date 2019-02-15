@@ -33,7 +33,7 @@
 * #124 Selección de niveles (Funcional)
 * #126 Arreglar Interfaz
 
-Además de esto he estado rediseñando pantallas del menú y retocando assets gráficos para hacerlos útiles para Unity.
+Además de esto he estado rediseñando pantallas del menú y retocando assets gráficos para hacerlos útiles para Unity, programé toda la interfaz desde el menú principal hasta los niveles en los que el menú de pausa te permite una serie de opciones.
 
 ### Retrospectiva del sprint
 #### Problemas que han surgido
