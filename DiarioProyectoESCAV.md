@@ -35,6 +35,14 @@
 
 Además de esto he estado rediseñando pantallas del menú y retocando assets gráficos para hacerlos útiles para Unity, programé toda la interfaz desde el menú principal hasta los niveles en los que el menú de pausa te permite una serie de opciones.
 
+#### Oufan
+* #20 Diseño, animación y script del prop especial Bloque de Hielo
+* #23 Script del prop especial de Clonador 
+* #25 Diseño del prop especial de Unidirección
+* #27 Diseño y script del prop especial Cinta
+* #24 Diseño, animación y script del prop especial Muelle (INCOMPLETO)
+* #26 Diseño, animación y script del prop especial Botón + Muro (INCOMPLETO)
+
 ### Retrospectiva del sprint
 #### Problemas que han surgido
 * #1 Los sprites no eran del tamaño adecuado y hubo que reescalarlos todos. 
