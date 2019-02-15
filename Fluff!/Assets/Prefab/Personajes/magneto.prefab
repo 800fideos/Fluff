@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2484640807102209100}
   - component: {fileID: 1738957843657718975}
   - component: {fileID: 9053710578773407753}
+  - component: {fileID: 6951047562339364136}
   m_Layer: 0
   m_Name: magneto
   m_TagString: Untagged
@@ -128,3 +129,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6951047562339364136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8261074171916254986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23407783ca673fd43bc78975d38aa15f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuerza_movimiento: 5
