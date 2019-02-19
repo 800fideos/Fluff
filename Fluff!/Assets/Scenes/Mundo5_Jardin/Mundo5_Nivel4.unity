@@ -276,6 +276,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: calvo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3536298334756279241, guid: db7163ab9a13ecc42af0c1caa645fb41,
+        type: 3}
+      propertyPath: m_TagString
+      value: Calvito
+      objectReference: {fileID: 0}
     - target: {fileID: 3536298334756279253, guid: db7163ab9a13ecc42af0c1caa645fb41,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -289,7 +294,7 @@ PrefabInstance:
     - target: {fileID: 3536298334756279253, guid: db7163ab9a13ecc42af0c1caa645fb41,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.063759916
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3536298334756279253, guid: db7163ab9a13ecc42af0c1caa645fb41,
         type: 3}
@@ -713,7 +718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707094447}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.64, y: 0, z: -10}
+  m_LocalPosition: {x: 0.64, y: 0, z: -13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1087,6 +1092,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: peluso (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5656470472109834735, guid: 932dff78537c1244b896e1c127a8eb73,
+        type: 3}
+      propertyPath: m_TagString
+      value: Peluso
+      objectReference: {fileID: 0}
     - target: {fileID: 5849220332665237574, guid: 932dff78537c1244b896e1c127a8eb73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1100,7 +1110,7 @@ PrefabInstance:
     - target: {fileID: 5849220332665237574, guid: 932dff78537c1244b896e1c127a8eb73,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.063759916
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5849220332665237574, guid: 932dff78537c1244b896e1c127a8eb73,
         type: 3}
@@ -1354,6 +1364,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: calvo
       objectReference: {fileID: 0}
+    - target: {fileID: 3536298334756279241, guid: db7163ab9a13ecc42af0c1caa645fb41,
+        type: 3}
+      propertyPath: m_TagString
+      value: Calvito
+      objectReference: {fileID: 0}
     - target: {fileID: 3536298334756279253, guid: db7163ab9a13ecc42af0c1caa645fb41,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1367,7 +1382,7 @@ PrefabInstance:
     - target: {fileID: 3536298334756279253, guid: db7163ab9a13ecc42af0c1caa645fb41,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.063759916
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3536298334756279253, guid: db7163ab9a13ecc42af0c1caa645fb41,
         type: 3}
@@ -1444,6 +1459,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: normal (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 883005155394411181, guid: 1bca6269d3255e34fb2b3ad5644ae699,
+        type: 3}
+      propertyPath: m_TagString
+      value: Normal
+      objectReference: {fileID: 0}
     - target: {fileID: 7460509593143566929, guid: 1bca6269d3255e34fb2b3ad5644ae699,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1457,7 +1477,7 @@ PrefabInstance:
     - target: {fileID: 7460509593143566929, guid: 1bca6269d3255e34fb2b3ad5644ae699,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.063759916
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7460509593143566929, guid: 1bca6269d3255e34fb2b3ad5644ae699,
         type: 3}
@@ -1663,6 +1683,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: calvo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3536298334756279241, guid: db7163ab9a13ecc42af0c1caa645fb41,
+        type: 3}
+      propertyPath: m_TagString
+      value: Calvito
+      objectReference: {fileID: 0}
     - target: {fileID: 3536298334756279253, guid: db7163ab9a13ecc42af0c1caa645fb41,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1676,7 +1701,7 @@ PrefabInstance:
     - target: {fileID: 3536298334756279253, guid: db7163ab9a13ecc42af0c1caa645fb41,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.063759916
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3536298334756279253, guid: db7163ab9a13ecc42af0c1caa645fb41,
         type: 3}
@@ -2141,6 +2166,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: normal
       objectReference: {fileID: 0}
+    - target: {fileID: 883005155394411181, guid: 1bca6269d3255e34fb2b3ad5644ae699,
+        type: 3}
+      propertyPath: m_TagString
+      value: Normal
+      objectReference: {fileID: 0}
     - target: {fileID: 7460509593143566929, guid: 1bca6269d3255e34fb2b3ad5644ae699,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2154,7 +2184,7 @@ PrefabInstance:
     - target: {fileID: 7460509593143566929, guid: 1bca6269d3255e34fb2b3ad5644ae699,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.063759916
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7460509593143566929, guid: 1bca6269d3255e34fb2b3ad5644ae699,
         type: 3}
@@ -2231,6 +2261,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fuertote
       objectReference: {fileID: 0}
+    - target: {fileID: 9155793404996782264, guid: e45a51c6efc1bb4419a49cd8488e9a35,
+        type: 3}
+      propertyPath: m_TagString
+      value: Fuerte
+      objectReference: {fileID: 0}
     - target: {fileID: 8893940249040781594, guid: e45a51c6efc1bb4419a49cd8488e9a35,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2244,7 +2279,7 @@ PrefabInstance:
     - target: {fileID: 8893940249040781594, guid: e45a51c6efc1bb4419a49cd8488e9a35,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.063759916
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8893940249040781594, guid: e45a51c6efc1bb4419a49cd8488e9a35,
         type: 3}
@@ -2321,6 +2356,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: peluso
       objectReference: {fileID: 0}
+    - target: {fileID: 5656470472109834735, guid: 932dff78537c1244b896e1c127a8eb73,
+        type: 3}
+      propertyPath: m_TagString
+      value: Peluso
+      objectReference: {fileID: 0}
     - target: {fileID: 5849220332665237574, guid: 932dff78537c1244b896e1c127a8eb73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2334,7 +2374,7 @@ PrefabInstance:
     - target: {fileID: 5849220332665237574, guid: 932dff78537c1244b896e1c127a8eb73,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.063759916
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5849220332665237574, guid: 932dff78537c1244b896e1c127a8eb73,
         type: 3}
@@ -2411,6 +2451,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: peluso (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5656470472109834735, guid: 932dff78537c1244b896e1c127a8eb73,
+        type: 3}
+      propertyPath: m_TagString
+      value: Peluso
+      objectReference: {fileID: 0}
     - target: {fileID: 5849220332665237574, guid: 932dff78537c1244b896e1c127a8eb73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2424,7 +2469,7 @@ PrefabInstance:
     - target: {fileID: 5849220332665237574, guid: 932dff78537c1244b896e1c127a8eb73,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.063759916
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5849220332665237574, guid: 932dff78537c1244b896e1c127a8eb73,
         type: 3}
