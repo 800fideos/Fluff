@@ -9,8 +9,9 @@ public class Cinta : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas"))
+		if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas"))
         {
+			col.transform.position = transform.position;
 			col.GetComponent<Rigidbody2D>().velocity = (direccion * fuerza);
         }
     }

@@ -11,6 +11,8 @@ public class Movimiento : MonoBehaviour
     Vector2 vector_inicio;
     Vector2 vector_fin;
     Vector2 resta_vector;
+	public bool paradaAutomatica = false;
+	public Vector3 vectorParada;
 
     //prepucio de mario sabroson
 
@@ -18,11 +20,18 @@ public class Movimiento : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+		transform.position = new Vector3 (Mathf.Round (transform.position.x), Mathf.Round (transform.position.y), 0);
     }
 
     void Update()
     {
-    
+		if (paradaAutomatica) {
+			if (Vector3.Distance(transform.position,vectorParada) < 0.1f) {
+				rb.velocity = Vector2.zero;
+				paradaAutomatica = false;
+				transform.position = new Vector3 (Mathf.Round (transform.position.x), Mathf.Round (transform.position.y), 0);
+			}
+		}
     }
 
     private void OnMouseDown()
@@ -86,4 +95,9 @@ public class Movimiento : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
+
+	public void MoveryParar(Vector3 parada){
+		paradaAutomatica = true;
+		vectorParada = parada;
+	}
 }
