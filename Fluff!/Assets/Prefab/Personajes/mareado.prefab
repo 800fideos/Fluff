@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5993416555415973978}
   - component: {fileID: 1898187940004443157}
   - component: {fileID: 7843321837135949574}
+  - component: {fileID: 3369423968682335598}
   m_Layer: 0
   m_Name: mareado
   m_TagString: Untagged
@@ -128,3 +129,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5277655, y: 1.5277648}
   m_EdgeRadius: 0
+--- !u!114 &3369423968682335598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504889821800862287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23407783ca673fd43bc78975d38aa15f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuerza_movimiento: 5

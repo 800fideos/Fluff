@@ -688,11 +688,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2926373
       objectReference: {fileID: 0}
-    - target: {fileID: 100007817480970431, guid: acf960588bfd29f4f8f13e7dc699ab34,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 801975315105219128, guid: acf960588bfd29f4f8f13e7dc699ab34,
         type: 3}
       propertyPath: m_Offset.x
@@ -712,6 +707,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 1.1500833
+      objectReference: {fileID: 0}
+    - target: {fileID: 100007817480970431, guid: acf960588bfd29f4f8f13e7dc699ab34,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acf960588bfd29f4f8f13e7dc699ab34, type: 3}
@@ -1231,7 +1231,7 @@ GameObject:
   - component: {fileID: 1856072092}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

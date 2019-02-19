@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5612341006656973860}
   - component: {fileID: 7756322221211425096}
   - component: {fileID: 8332617750341398894}
+  - component: {fileID: 1887966187069175882}
   m_Layer: 8
   m_Name: fuertote
   m_TagString: Untagged
@@ -128,3 +129,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5389254, y: 1.5389258}
   m_EdgeRadius: 0
+--- !u!114 &1887966187069175882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155793404996782264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23407783ca673fd43bc78975d38aa15f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuerza_movimiento: 5

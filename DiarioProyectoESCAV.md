@@ -49,10 +49,84 @@ Además de esto he estado rediseñando pantallas del menú y retocando assets gr
 * #24 Diseño, animación y script del prop especial Muelle (INCOMPLETO)
 * #26 Diseño, animación y script del prop especial Botón + Muro (INCOMPLETO)
 
+#### Pavel
+* #4 Props Desván "Cabeza de robot".
+* #5 Props Salón "Televisión".
+* #6 Props Salón "Sofá".
+* #7 Props Salón "Mesa redonda".
+* #8 Props Salón "Mesa cuadrada".
+* #82 Mundo Salón nivel 1 distribución props.
+* #83 Mundo Salón nivel 2 distribución props.
+* #84 Mundo Salón nivel 3 distribución props.
+* #85 Mundo Salón nivel 4 distribución props.
+* #86 Mundo Salón nivel 5 distribución props.
+* #123 Reescalado y ajuste de props.
+* #91 Mundo Cocina nivel 1 distribución props.
+* #92 Mundo Cocina nivel 2 distribución props.
+* #93 Mundo Cocina nivel 3 distribución props.
+* #94 Mundo Cocina nivel 4 distribución props.
+* #95 Mundo Cocina nivel 5 distribución props.
+
+Debido a problemas técnicos el primer día de sprint al día siguiente rehice algunos props especiales.
+
+#### Ana
+* #1 | Caja cartón
+* #2 | Caja herramientas
+* #3 | Maletín 
+* #17 | Arenero 
+* #18 | Molinillo de viento 
+* #21 | Piscina hinchable 
+* #22 | Regadera 
+* #79 | Distribución de Props (Montaje de Mundo 3 - Nivel 1)
+* #80 | Distribución de Props (Montaje de Mundo 3 - Nivel 2)
+* #81 | Distribución de Props (Montaje de Mundo 3 - Nivel 3)
+* #87 | Distribución de Props (Montaje de Mundo 3 - Nivel 4)
+* #88 | Distribución de Props (Montaje de Mundo 3 - Nivel 5)
+* #89 | Distribución de Props (Montaje de Mundo 5 - Nivel 1)
+* #90 | Distribución de Props (Montaje de Mundo 5 - Nivel 2)
+* #96 | Distribución de Props (Montaje de Mundo 5 - Nivel 3)
+* #97 | Distribución de Props (Montaje de Mundo 5 - Nivel 4)
+* #98 | Distribución de Props (Montaje de Mundo 5 - Nivel 5)
+* #113 | Creación de Pantalla (Interfaz de la pantalla de victoria). 
+* #123 | Reescalado de sprites
+
+He exportado y rediseñado algunos elementos que estaban pixelados en el archivo original de la pantalla de victoria.
+
+#### Miguel
+
+* #23 
+Colonador
+* #125 Crear rastro mojado
+* #68 Creación Dormilón
+* #16 Pastilla de jabón
+* #10 Pasta de dientes
+* #15 Patito de goma
+* #63 Creacion Fuertes
+* #58 Creación Normal
+* #62 Creación Confuso
+* #59 Creación Calvito
+* #12 Papel Higienico
+* #74 Distribución de Props Desván, Nivel 1
+* #75 Distribución de Props Desván, Nivel 2
+* #76 Distribución de Props Desván, Nivel 3
+* #77 Distribución de Props Desván, Nivel 4
+* #78 Distribución de Props Desván, Nivel 5
+* #123 Reescalado de Sprites
+*(Tareas que no están en hacknplan: ) Creación Uniones Personajes
+
 ### Retrospectiva del sprint
 #### Problemas que han surgido
 * #1 Los sprites no eran del tamaño adecuado y hubo que reescalarlos todos. 
 * #2 Los fondos no eran del tamaño adecuado y hubo que adaptarlos también.
-* #3 
+* #3 Los menús se rompieron al no programarlos adecuadamente, por tanto, hubo que reprogramarlos.
+* #4 El script de la habilidad del personaje mojado ha llevado más tiempo del esperado.
+* #5 Algunos de los props especiales desaparecieron de algunas escenas.
 #### Posibles soluciones 
+* #1 Se reescalaron los sprites. (SOLUCIONADO)
+* #2 Se adaptaron los fondos de forma correcta. (SOLUCIONADO) 
+* #3 Se volvieron a reprogramar de forma correcta. (SOLUCIONADO)
+* #4 Aunque tardando más de lo esperado el personaje mojado ya usa su habilidad de forma correcta. (SOLUCIONADO)
+* #5 Se volvieron a crear y colocar esos props especiales. (SOLUCIONADO)
+
 #### Se han completado todas las tareas? Si la respuesta es no, por qué no?
+No se han completado todas las tareas, las que han quedado eran de programación. No se completaron porque las otras tareas de prgramación nos llevaron más tiempo del que esperábamos y esto retrasó las que no se han completado.
