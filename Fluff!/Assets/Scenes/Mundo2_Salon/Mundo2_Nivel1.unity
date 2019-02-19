@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 229350873}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -423,7 +423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229350872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.45, y: 0, z: -13.01}
+  m_LocalPosition: {x: 0.45, y: 0, z: -13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -555,6 +555,7 @@ GameObject:
   - component: {fileID: 611669538}
   - component: {fileID: 611669539}
   - component: {fileID: 611669540}
+  - component: {fileID: 611669541}
   m_Layer: 0
   m_Name: Normal doble
   m_TagString: Untagged
@@ -628,6 +629,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &611669541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611669537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23407783ca673fd43bc78975d38aa15f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuerza_movimiento: 5
 --- !u!1001 &630240772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1650,11 +1664,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 611669538}
     m_Modifications:
-    - target: {fileID: 3453070080605307416, guid: 104c9fc4bd1422947b9b4773ed7bc4d6,
-        type: 3}
-      propertyPath: m_Name
-      value: izquierda
-      objectReference: {fileID: 0}
     - target: {fileID: 2475373742973909526, guid: 104c9fc4bd1422947b9b4773ed7bc4d6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1720,6 +1729,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 3453070080605307416, guid: 104c9fc4bd1422947b9b4773ed7bc4d6,
+        type: 3}
+      propertyPath: m_Name
+      value: izquierda
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4393225119061580346, guid: 104c9fc4bd1422947b9b4773ed7bc4d6, type: 3}
     - {fileID: 2381862791429154021, guid: 104c9fc4bd1422947b9b4773ed7bc4d6, type: 3}
@@ -1737,11 +1751,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 611669538}
     m_Modifications:
-    - target: {fileID: 3453070080605307416, guid: 104c9fc4bd1422947b9b4773ed7bc4d6,
-        type: 3}
-      propertyPath: m_Name
-      value: derecha
-      objectReference: {fileID: 0}
     - target: {fileID: 2475373742973909526, guid: 104c9fc4bd1422947b9b4773ed7bc4d6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1806,6 +1815,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3453070080605307416, guid: 104c9fc4bd1422947b9b4773ed7bc4d6,
+        type: 3}
+      propertyPath: m_Name
+      value: derecha
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4393225119061580346, guid: 104c9fc4bd1422947b9b4773ed7bc4d6, type: 3}
