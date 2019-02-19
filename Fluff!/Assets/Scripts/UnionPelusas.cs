@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class UnionPelusas : MonoBehaviour
 {
+    Rigidbody2D rb;
 
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();    
     }
 
     void Update()
@@ -17,9 +18,13 @@ public class UnionPelusas : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas"))
+        if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas") && col.transform.parent == null)
         {
-            col.transform.parent = transform;
+            Destroy(rb);
+            transform.parent = col.transform;
+        }else
+        {
+            rb.velocity = Vector2.zero;
         }
     }
 }
