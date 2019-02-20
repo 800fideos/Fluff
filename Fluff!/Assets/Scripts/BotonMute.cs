@@ -5,32 +5,49 @@ using UnityEngine.UI;
 
 public class BotonMute : MonoBehaviour
 {
-	public Sprite OffSprite;
-	public Sprite OnSprite;
-	public Button but;
+	public Sprite OffMusica;
+	public Sprite OnMusica;
+	public Sprite OffSonido;
+	public Sprite OnSonido;
+	public Button butMusic;
+	public Button butSonido;
 	bool isMute;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public static BotonMute instance = null;
+	// Start is called before the first frame update
+	void Start()
+	{
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-	public void Mute (){
-		isMute = !isMute;
-		AudioListener.volume = isMute ? 0: 1;
 	}
-	public void ChangeImage(){
-		if (but.image.sprite == OnSprite)
-			but.image.sprite = OffSprite;
-		else {
-			but.image.sprite = OnSprite;
+
+	// Update is called once per frame
+	void Update()
+	{
+
+	}
+	void Awake(){
+		if (instance == null) {
+			instance = this;
+		} else if (instance != this) {
+			Destroy (gameObject);
 		}
+		DontDestroyOnLoad (gameObject);
 	}
-		
+
+	public void MuteMusica (){
+		if (butMusic.image.sprite == OnMusica){
+			
+			butMusic.image.sprite = OffMusica;
+		}
+		else
+			butMusic.image.sprite = OnMusica;
+	}
+
+	public void MuteSonido (){
+		if (butSonido.image.sprite == OnSonido) {
+
+			butSonido.image.sprite = OffSonido;
+		} else
+			butSonido.image.sprite = OnSonido;
+
+	}
 }
