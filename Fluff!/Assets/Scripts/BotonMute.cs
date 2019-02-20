@@ -8,6 +8,7 @@ public class BotonMute : MonoBehaviour
 	public Sprite OffSprite;
 	public Sprite OnSprite;
 	public Button but;
+	bool isMute;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,10 @@ public class BotonMute : MonoBehaviour
         
     }
 
+	public void Mute (){
+		isMute = !isMute;
+		AudioListener.volume = isMute ? 0: 1;
+	}
 	public void ChangeImage(){
 		if (but.image.sprite == OnSprite)
 			but.image.sprite = OffSprite;
