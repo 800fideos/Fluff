@@ -21,7 +21,6 @@ public class ColliderMuelle : MonoBehaviour
             col.gameObject.GetComponent<Rigidbody2D>().AddForce(direccion * fuerza);
             col.gameObject.GetComponent<Movimiento>().MoveryParar((transform.position + distanciaParada));
             Muelle.GetComponent<Animator>().SetTrigger("rebote");
-
         }
     }
 }

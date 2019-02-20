@@ -13,8 +13,7 @@ public class Movimiento : MonoBehaviour
     Vector2 resta_vector;
 	public bool paradaAutomatica = false;
 	public Vector3 vectorParada;
-
-    //prepucio de mario sabroson
+    
 
 
     void Start()
@@ -26,7 +25,7 @@ public class Movimiento : MonoBehaviour
     void Update()
     {
 		if (paradaAutomatica) {
-			if (Vector3.Distance(transform.position,vectorParada) < 0.1f) {
+			if (Vector3.Distance(transform.position,vectorParada) < 0.2f) {
 				rb.velocity = Vector2.zero;
 				paradaAutomatica = false;
 				transform.position = new Vector3 (Mathf.Round (transform.position.x), Mathf.Round (transform.position.y), 0);
