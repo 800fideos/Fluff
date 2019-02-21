@@ -21,7 +21,7 @@ public class CargaMundo1 : MonoBehaviour
 	{
 		//IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
 		SceneManager.LoadScene("Mundo1_Nivel1");
-	}
+    }
 
 	public void CargaNivel2()
 	{
