@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour
 
     public AudioClip MenuPrincipal;
     public AudioClip Desvan;
+    public AudioClip Salon;
+    public AudioClip Baño;
+    public AudioClip Cocina;
+    public AudioClip Jardin;
 
     private AudioSource audioSource;
 
@@ -45,7 +49,27 @@ public class GameManager : MonoBehaviour
             audioSource.volume = 1f;
             audioSource.clip = Desvan;
         }
-        else 
+        else if (nivel == 3) //Salon
+        {
+            audioSource.volume = 0.300f;
+            audioSource.clip = Salon;
+        }
+        else if (nivel == 4) //Baño
+        {
+            audioSource.volume = 0.300f;
+            audioSource.clip = Baño;
+        }
+        else if (nivel == 5) //Cocina
+        {
+            audioSource.volume = 0.300f;
+            audioSource.clip = Cocina;
+        }
+        else if (nivel == 6) //Jardin
+        {
+            audioSource.volume = 0.300f;
+            audioSource.clip = Jardin;
+        }
+        else
         {
             Debug.LogError("No hay canción!!!!!!!!!!!!!!!!");
         }
