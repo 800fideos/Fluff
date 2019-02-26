@@ -18,7 +18,7 @@ public class ParaPelusas : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas") && col.gameObject != miPadre)
+        if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas") && col.gameObject != miPadre && !col.gameObject.GetComponent<UnionPelusas>().pelusaUnida)
         {
             col.GetComponent<Rigidbody2D>().velocity = (col.transform.position * 0);
         }

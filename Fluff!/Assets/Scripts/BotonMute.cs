@@ -50,4 +50,9 @@ public class BotonMute : MonoBehaviour
 			butSonido.image.sprite = OnSonido;
 
 	}
+
+	public void Mute (){
+		isMute = !isMute;
+		AudioListener.volume = isMute ? 0 : 1;
+	}
 }

@@ -24,7 +24,8 @@ public class Mojado : MonoBehaviour
 
     void Update()
     {
-        velocidadActual = rb.velocity.magnitude;
+        if (rb != null)
+            velocidadActual = rb.velocity.magnitude;
        
         if (velocidadActual > 1f)
         {
@@ -34,7 +35,9 @@ public class Mojado : MonoBehaviour
                 SoltarCharco(new Vector3(transform.position.x, transform.position.y, -0.5f), Vector3.zero);
                 primerCharco = false;
             }
-            RastroAgua();
+
+            if (rb != null)
+                RastroAgua();
         }
         else
         {
