@@ -52,7 +52,7 @@ public class UnionPelusas : MonoBehaviour
 
         if (hitTop.collider != null)
         {
-            if (GetComponent<Collider>().gameObject.layer == LayerMask.NameToLayer ("Pelusas"))
+            if (GetComponent<Collider2D>().gameObject.layer == LayerMask.NameToLayer ("Pelusas"))
             {
                 UnirPelusas();
             }
