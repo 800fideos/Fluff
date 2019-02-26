@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8015586731200815250}
   - component: {fileID: 8015586731200815249}
   - component: {fileID: 8015586731200815248}
+  - component: {fileID: 5431533348033014825}
   m_Layer: 0
   m_Name: molinillo
   m_TagString: Untagged
@@ -106,3 +107,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3546747, y: 1.3119316}
   m_EdgeRadius: 0
+--- !u!114 &5431533348033014825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8015586731200815247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86af8c117f0c564488ee42531efe3e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
