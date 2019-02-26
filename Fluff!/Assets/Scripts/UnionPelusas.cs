@@ -57,7 +57,42 @@ public class UnionPelusas : MonoBehaviour
 
     private void CambiarSprites(bool[] alrededorPelusas)
     {
+        int sumaSprite = 0;
+        for (int i = 0; i < spritePelusa.Length; i++)
+        {
+            // 0 Sprite default
+            // 1 Sprite simple arriba
+            // 2 Sprite simple abajo
+            // 3 Sprite simple derecha
+            // 4 Sprite simple izquierda
+            // 5 Sprite esquina arriba izquierda
+            // 6 Sprite esquina arriba derecha
+            // 7 Sprite esquina abajo izquierda
+            // 8 Sprite esquina abajo derecha
+            // 9 Sprite centro horizontal
+            // 10 Sprite centro horizontal abajo (sin pelo)
+            // 11 Sprite centro vertical 
+            // 12 Sprite centro vertical izquierda
+            // 13 Sprite centro vertical derecha
+            // 14 Sprite central 
 
+            if (alrededorPelusas[0] == true)
+            {
+                sumaSprite = sumaSprite + 8;
+            }
+            if (alrededorPelusas[1] == true) {
+                sumaSprite = sumaSprite + 1;
+            }
+            if (alrededorPelusas[2] == true)
+            {
+                sumaSprite = sumaSprite + 2;
+            }
+            if (alrededorPelusas[3] == true)
+            {
+                sumaSprite = sumaSprite + 4;
+            }
+            sr.sprite = spritePelusa[sumaSprite];
+        }
     }
 
     private bool LanzarRaycast(Vector2 direccion, Vector2 position)
@@ -72,8 +107,6 @@ public class UnionPelusas : MonoBehaviour
         {
             Debug.Log(gameObject.name + " etá detectando: " + collider.gameObject.name);
         }
-
-
 
         return (collider != null && collider.gameObject.layer == LayerMask.NameToLayer("Pelusas"));
     }
@@ -110,7 +143,8 @@ public class UnionPelusas : MonoBehaviour
         alrededorPelusas[1] = LanzarRaycastDerecha();
         alrededorPelusas[2] = LanzarRaycastAbajo();
         alrededorPelusas[3] = LanzarRaycastIzquierdo();
-
+        
+        //DEBUG
         Debug.Log("[" + gameObject.name + "]: " + "Colisión arriba --> " + alrededorPelusas[0]);
         Debug.Log("[" + gameObject.name + "]: " + "Colisión derecha --> " + alrededorPelusas[1]);
         Debug.Log("[" + gameObject.name + "]: " + "Colisión Abajo --> " + alrededorPelusas[2]);
