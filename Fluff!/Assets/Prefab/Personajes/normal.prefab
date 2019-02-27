@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alrededorPelusas: 00000000
   spritePelusa:
-  - {fileID: 21300000, guid: fd389468f72571e43a09f8d2c0fe27ed, type: 3}
+  - {fileID: 21300000, guid: 63f9fe365296f3e40a414de4f125d115, type: 3}
   - {fileID: 21300000, guid: 0ad208c9062594a45a33bae97419be54, type: 3}
   - {fileID: 21300000, guid: c244328a0e215ac4fabb6a1f724aa559, type: 3}
   - {fileID: 21300000, guid: 7e927b946b5eab84b90f9ead06c8822c, type: 3}
