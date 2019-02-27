@@ -13,24 +13,31 @@ public class Movimiento : MonoBehaviour
     Vector2 resta_vector;
 	public bool paradaAutomatica = false;
 	public Vector3 vectorParada;
-    
-
+    public static Vector2 movConfuso;
+    public bool enMovimiento = false;
 
     void Start()
     {
+        movConfuso = Vector2.zero;
         rb = GetComponent<Rigidbody2D>();
 		transform.position = new Vector3 (Mathf.Round (transform.position.x), Mathf.Round (transform.position.y), 0);
     }
 
     void Update()
     {
+        Debug.Log(movConfuso);
 		if (paradaAutomatica) {
 			if (Vector3.Distance(transform.position,vectorParada) < 0.2f) {
 				rb.velocity = Vector2.zero;
+                enMovimiento = false;
 				paradaAutomatica = false;
 				transform.position = new Vector3 (Mathf.Round (transform.position.x), Mathf.Round (transform.position.y), 0);
 			}
 		}
+
+        if (transform.CompareTag("Confuso") && !enMovimiento && movConfuso != Vector2.zero){
+            rb.velocity = movConfuso;
+        }
     }
 
     private void OnMouseDown()
@@ -47,17 +54,19 @@ public class Movimiento : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (Input.touchCount > 0)
-        {
-            vector_fin = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
-            CalculaVector();
+        if (!enMovimiento) { 
+            if (Input.touchCount > 0)
+            {
+                vector_fin = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+                CalculaVector();
+            }
+            else
+            {
+                vector_fin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                CalculaVector();
+            }
         }
-        else
-        {
-            vector_fin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            CalculaVector();
-        }
-        
+
     }
 
     void CalculaVector()
@@ -85,6 +94,11 @@ public class Movimiento : MonoBehaviour
                 rb.velocity = (Vector2.right * -fuerza_movimiento);
             }
         }
+        enMovimiento = true;
+        if (transform.CompareTag("Confuso") && movConfuso == Vector2.zero)
+        {
+            movConfuso = rb.velocity;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -93,6 +107,9 @@ public class Movimiento : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+        enMovimiento = false;
+        rb.velocity = Vector2.zero;
+        movConfuso = Vector2.zero;
     }
 
 	public void MoveryParar(Vector3 parada){
