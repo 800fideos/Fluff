@@ -5,7 +5,7 @@ using UnityEngine;
 public class UnionPelusas : MonoBehaviour
 {
     Rigidbody2D rb;
-
+    public bool[] alrededorPelusas = new bool[4];
 
     bool golpeTop = false;
     bool golpeBot = false;
@@ -25,8 +25,8 @@ public class UnionPelusas : MonoBehaviour
 
     void Update()
     {
-        if (pelusaUnida)
-            RevisarPelusasHijas();
+        //if (pelusaUnida)
+            
 
     }
 
@@ -57,7 +57,7 @@ public class UnionPelusas : MonoBehaviour
 
     private void CambiarSprites(bool[] alrededorPelusas)
     {
-        int sumaSprite = 0;
+        
         for (int i = 0; i < spritePelusa.Length; i++)
         {
             // 0 Sprite default
@@ -75,7 +75,7 @@ public class UnionPelusas : MonoBehaviour
             // 12 Sprite centro vertical izquierda
             // 13 Sprite centro vertical derecha
             // 14 Sprite central 
-
+            int sumaSprite = 0;
             if (alrededorPelusas[0] == true)
             {
                 sumaSprite = sumaSprite + 8;
@@ -92,6 +92,7 @@ public class UnionPelusas : MonoBehaviour
             {
                 sumaSprite = sumaSprite + 4;
             }
+            Debug.Log("sprite" + sumaSprite);
             sr.sprite = spritePelusa[sumaSprite];
         }
     }
@@ -134,7 +135,7 @@ public class UnionPelusas : MonoBehaviour
 
     private void LanzarRaycastsAlrededor()
     {
-        bool[] alrededorPelusas = new bool[4];
+        
         // 0 Arriba
         // 1 derecha
         // 2 Abajo
@@ -178,7 +179,10 @@ public class UnionPelusas : MonoBehaviour
             }
             else
             {
-                transform.parent.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                if (transform.parent != null) {
+                    transform.parent.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                }
+                    
             }
 
             RevisarPelusasHijas();

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7864887972632485091}
   - component: {fileID: 7864887972632485088}
   - component: {fileID: 7864887972632485089}
+  - component: {fileID: 667633787110202081}
   m_Layer: 0
   m_Name: mesa3
   m_TagString: Untagged
@@ -106,3 +107,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.751911, y: 1.341126}
   m_EdgeRadius: 0
+--- !u!114 &667633787110202081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7864887972632485102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86af8c117f0c564488ee42531efe3e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
