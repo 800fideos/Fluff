@@ -25,8 +25,6 @@ public class UnionPelusas : MonoBehaviour
 
     void Update()
     {
-        //if (pelusaUnida)
-            
 
     }
 
