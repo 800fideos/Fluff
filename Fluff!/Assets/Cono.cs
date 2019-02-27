@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cono : MonoBehaviour
 {
-	public bool paradaAutomatica = false;
+	bool paradaAutomatica = false;
 	Vector3 vectorParada;
 
     void Start()
