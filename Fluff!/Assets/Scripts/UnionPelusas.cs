@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class UnionPelusas : MonoBehaviour
 {
+    enum Direccion
+    {
+        Arriba,
+        Derecha,
+        Abajo,
+        Izquierda
+    };
+
     Rigidbody2D rb;
     public bool[] alrededorPelusas = new bool[4];
 
@@ -16,6 +24,8 @@ public class UnionPelusas : MonoBehaviour
 
     public bool pelusaUnida = false;
     public GameObject padre;
+    public float rayDist = 0.2f;
+    public int sumaSprite;
 
     void Start()
     {
@@ -25,7 +35,7 @@ public class UnionPelusas : MonoBehaviour
 
     void Update()
     {
-
+        LanzarRaycastsAlrededor();
     }
 
     private void CrearPadrePelusas()
@@ -60,35 +70,41 @@ public class UnionPelusas : MonoBehaviour
         {
             // 0 Sprite default
             // 1 Sprite simple arriba
-            // 2 Sprite simple abajo
-            // 3 Sprite simple derecha
-            // 4 Sprite simple izquierda
-            // 5 Sprite esquina arriba izquierda
-            // 6 Sprite esquina arriba derecha
-            // 7 Sprite esquina abajo izquierda
-            // 8 Sprite esquina abajo derecha
-            // 9 Sprite centro horizontal
-            // 10 Sprite centro horizontal abajo (sin pelo)
-            // 11 Sprite centro vertical 
-            // 12 Sprite centro vertical izquierda
-            // 13 Sprite centro vertical derecha
-            // 14 Sprite central 
-            int sumaSprite = 0;
-            if (alrededorPelusas[0] == true)
-            {
-                sumaSprite = sumaSprite + 8;
-            }
-            if (alrededorPelusas[1] == true)
+            // 2 Sprite simple derecha
+            // 3 Sprite Arriba y Derecha
+            // 4 Sprite simple abajo
+            // 5 Sprite Arriba y Abajo
+            // 6 Sprite Derecha y Abajo
+            // 7 Sprite Arriba, derecha y Abajo
+            // 8 simple Izquierda
+            // 9 Sprite Izquierda y Arriba
+            // 10 Sprite Izquierda y Derecha
+            // 11 Izquierda , derecha y arriba
+            // 12 Izquierda y Abajo
+            // 13 Izquierda , abajo y arriba
+            // 14 Izquierda, Abajo y Derecha
+            // 15 Central
+            sumaSprite = 0;
+            
+            // 0 Arriba
+            // 1 derecha
+            // 2 Abajo
+            // 3 Izquierda
+            if (alrededorPelusas[(int)Direccion.Arriba] == true)
             {
                 sumaSprite = sumaSprite + 1;
             }
-            if (alrededorPelusas[2] == true)
+            if (alrededorPelusas[(int)Direccion.Derecha] == true)
             {
                 sumaSprite = sumaSprite + 2;
             }
-            if (alrededorPelusas[3] == true)
+            if (alrededorPelusas[(int)Direccion.Abajo] == true)
             {
                 sumaSprite = sumaSprite + 4;
+            }
+            if (alrededorPelusas[(int)Direccion.Izquierda] == true)
+            {
+                sumaSprite = sumaSprite + 8;
             }
             Debug.Log("sprite" + sumaSprite);
             sr.sprite = spritePelusa[sumaSprite];
@@ -97,10 +113,10 @@ public class UnionPelusas : MonoBehaviour
 
     private bool LanzarRaycast(Vector2 direccion, Vector2 position)
     {
-        Collider2D collider = Physics2D.Raycast(position, direccion, 0.1f).collider;
+        Collider2D collider = Physics2D.Raycast(position, direccion, rayDist).collider;
 
 
-        Debug.DrawRay(position, direccion, Color.red);
+        Debug.DrawRay(position, direccion * rayDist, Color.red);
 
         // DEBUG
         if (collider != null)
@@ -123,12 +139,12 @@ public class UnionPelusas : MonoBehaviour
 
     private bool LanzarRaycastAbajo()
     {
-        return LanzarRaycast(Vector2.down, new Vector2(transform.position.x, -(transform.position.y + gameObject.GetComponent<Collider2D>().bounds.size.y / 2 + 0.1f)));
+        return LanzarRaycast(Vector2.down, new Vector2(transform.position.x, (transform.position.y - gameObject.GetComponent<Collider2D>().bounds.size.y / 2 - 0.1f)));
     }
 
     private bool LanzarRaycastIzquierdo()
     {
-        return LanzarRaycast(Vector2.left, new Vector2(-(transform.position.x + gameObject.GetComponent<Collider2D>().bounds.size.x / 2 + 0.1f), transform.position.y));
+        return LanzarRaycast(Vector2.left, new Vector2((transform.position.x - gameObject.GetComponent<Collider2D>().bounds.size.x / 2 - 0.1f), transform.position.y));
     }
 
     private void LanzarRaycastsAlrededor()
@@ -139,10 +155,10 @@ public class UnionPelusas : MonoBehaviour
         // 2 Abajo
         // 3 Izquierda
 
-        alrededorPelusas[0] = LanzarRaycastArriba();
-        alrededorPelusas[1] = LanzarRaycastDerecha();
-        alrededorPelusas[2] = LanzarRaycastAbajo();
-        alrededorPelusas[3] = LanzarRaycastIzquierdo();
+        alrededorPelusas[(int)Direccion.Arriba] = LanzarRaycastArriba();
+        alrededorPelusas[(int)Direccion.Derecha] = LanzarRaycastDerecha();
+        alrededorPelusas[(int)Direccion.Abajo] = LanzarRaycastAbajo();
+        alrededorPelusas[(int)Direccion.Izquierda] = LanzarRaycastIzquierdo();
 
         //DEBUG
         Debug.Log("[" + gameObject.name + "]: " + "Colisión arriba --> " + alrededorPelusas[0]);
