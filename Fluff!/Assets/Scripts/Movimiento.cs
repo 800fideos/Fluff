@@ -16,11 +16,18 @@ public class Movimiento : MonoBehaviour
     public static Vector2 movConfuso;
     public bool enMovimiento = false;
 
+    public AudioClip sonidoReposo;
+    public AudioClip sonidoChoque;
+    public AudioClip sonidoUnion;
+
+    AudioSource audioCamara;
+
     void Start()
     {
         movConfuso = Vector2.zero;
         rb = GetComponent<Rigidbody2D>();
 		transform.position = new Vector3 (Mathf.Round (transform.position.x), Mathf.Round (transform.position.y), 0);
+        audioCamara = Camera.main.gameObject.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -38,6 +45,8 @@ public class Movimiento : MonoBehaviour
         if (transform.CompareTag("Confuso") && !enMovimiento && movConfuso != Vector2.zero){
             rb.velocity = movConfuso;
         }
+
+
     }
 
     private void OnMouseDown()
@@ -103,6 +112,9 @@ public class Movimiento : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
+        audioCamara.clip = sonidoChoque;
+        audioCamara.Play();
+
         if (col.gameObject.CompareTag("Límite"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
