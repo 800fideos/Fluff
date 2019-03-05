@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
-
+	public static int contadorPelusas;
+	public GameObject panel;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,9 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+		if (contadorPelusas == 0) {
+			panel.SetActive ;
+		}
     }
 
 

@@ -9,11 +9,13 @@ public class GameController : MonoBehaviour
 	public GameObject camaraMenu;
 	public GameObject menuPrincipal;
 
-	static int estrellas = 0;
+	public static int estrellas = 0;
+	Animator animacion;
     // Start is called before the first frame update
     void Start()
     {
 		Scene scene = SceneManager.GetActiveScene();
+		animacion = gameObject.GetComponent<Animator> ();
     }
 
     // Update is called once per frame
@@ -27,6 +29,7 @@ public class GameController : MonoBehaviour
 		else {
 			Time.timeScale = 1f;
 		}
+
     }
 
 
@@ -49,4 +52,12 @@ public class GameController : MonoBehaviour
 		camaraMenu.SetActive (true);
 		menuPrincipal.SetActive (true);
 	}
+
+	void TresEstrellas(){
+		
+			animacion.SetInteger ("estrellas", estrellas);
+
+	}
+
+
 }

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class CasillaEstrella : MonoBehaviour
 {
-    // Start is called before the first frame update
+	
+	bool pisandoFuerte = false;
+
     void Start()
     {
         
@@ -15,4 +17,20 @@ public class CasillaEstrella : MonoBehaviour
     {
         
     }
+
+	void OnTriggerEnter2D (Collider2D col){
+		if (col.gameObject.CompareTag ("Unido")) {
+			
+			GameController.estrellas++;
+			//Queremos que se sume uno al int del int que hay en GameController 
+		}
+	}
+
+	void OnTriggerExit2D (Collider2D col){
+		if (col.gameObject.CompareTag ("Unido")) {
+			
+			GameController.estrellas--;
+			//Queremos que se sume uno al int del int que hay en GameController 
+		}
+	}
 }
