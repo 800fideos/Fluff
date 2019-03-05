@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
 	public static bool pausa = false;
 	public GameObject camaraMenu;
 	public GameObject menuPrincipal;
+
+	static int estrellas = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,7 @@ public class GameController : MonoBehaviour
 	{
 		//IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		pausa = false;
 	}
 
 	public void IniciarJuego(){

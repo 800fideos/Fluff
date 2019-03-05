@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 100007817480970431}
   - component: {fileID: 801975315105219128}
   - component: {fileID: 2044512902362874254}
+  - component: {fileID: 2049743624847575454}
   m_Layer: 0
   m_Name: estrella
   m_TagString: Untagged
@@ -117,5 +118,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86af8c117f0c564488ee42531efe3e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2049743624847575454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885167182501102253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72e5f6ae8831cfe478394063c457a417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

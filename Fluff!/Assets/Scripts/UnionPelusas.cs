@@ -35,7 +35,7 @@ public class UnionPelusas : MonoBehaviour
 
     void Update()
     {
-        LanzarRaycastsAlrededor();
+        
     }
 
     private void CrearPadrePelusas()
@@ -69,21 +69,21 @@ public class UnionPelusas : MonoBehaviour
         for (int i = 0; i < spritePelusa.Length; i++)
         {
             // 0 Sprite default
-            // 1 Sprite simple arriba
-            // 2 Sprite simple derecha
-            // 3 Sprite Arriba y Derecha
-            // 4 Sprite simple abajo
-            // 5 Sprite Arriba y Abajo
-            // 6 Sprite Derecha y Abajo
-            // 7 Sprite Arriba, derecha y Abajo
-            // 8 simple Izquierda
-            // 9 Sprite Izquierda y Arriba
-            // 10 Sprite Izquierda y Derecha
-            // 11 Izquierda , derecha y arriba
-            // 12 Izquierda y Abajo
-            // 13 Izquierda , abajo y arriba
-            // 14 Izquierda, Abajo y Derecha
-            // 15 Central
+            // 1 Sprite Izquierda           (Colisión Derecha)
+            // 2 Sprite Arriba              (Colisión Abajo)
+            // 3 Sprite Arriba Izquierda    (Colisión Abajo y Derecha)
+            // 4 Sprite Derecha             (Colisión Izquierda)
+            // 5 Sprite Central Vertical    (Colisión Izquierda y Derecha)
+            // 6 Sprite Arriba Derecha      (Colisión Abajo Izquierda)
+            // 7 Sprite Central Arriba      (Colisión Abajo, Derecha e Izquierda)
+            // 8 Sprite Abajo               (Colisión Arriba)
+            // 9 Sprite Abajo Izquierda     (Colisión Arriba Derecha)
+            // 10 Sprite Central Horizontal (Colisión Arriba y Abajo)
+            // 11 Sprite Central V Izquierda(Colisión Arriba, Abajo y Derecha 
+            // 12 Sprite Abajo Derecha      (Colisión Arriba Izquierda)
+            // 13 Sprite Central Abajo      (Colisión Arriba, Derecha e Izquierda)
+            // 14 Spirte Central V Derecha  (Colisión Arriba, Abajo e Izquierda)
+            // 15 Sprite Central            (Colisión por todos lados)
             sumaSprite = 0;
             
             // 0 Arriba
@@ -190,6 +190,9 @@ public class UnionPelusas : MonoBehaviour
                     IniciarUniones();
                 }
                 UnirPelusa(col);
+                LanzarRaycastsAlrededor();
+                col.transform.position = new Vector3(Mathf.Round(col.transform.position.x), Mathf.Round(col.transform.position.y), 0);
+                transform.position = new Vector3(Mathf.Round(transform.position.x), Mathf.Round(transform.position.y), 0);
             }
             else
             {
