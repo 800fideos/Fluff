@@ -31,6 +31,8 @@ public class UnionPelusas : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+
+
     }
 
     void Update()
@@ -188,9 +190,13 @@ public class UnionPelusas : MonoBehaviour
                 if (rb != null)
                 { // Primera vez que se une
                     IniciarUniones();
+					CuentaPelusas.contadorPelusas--;
+					Debug.Log (CuentaPelusas.contadorPelusas);
                 }
                 UnirPelusa(col);
                 LanzarRaycastsAlrededor();
+				CuentaPelusas.contadorPelusas--;
+				Debug.Log (CuentaPelusas.contadorPelusas);
                 col.transform.position = new Vector3(Mathf.Round(col.transform.position.x), Mathf.Round(col.transform.position.y), 0);
                 transform.position = new Vector3(Mathf.Round(transform.position.x), Mathf.Round(transform.position.y), 0);
             }
