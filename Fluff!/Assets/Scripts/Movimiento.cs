@@ -48,10 +48,6 @@ public class Movimiento : MonoBehaviour
         if (transform.CompareTag("Confuso") && !enMovimiento && movConfuso != Vector2.zero){
             rb.velocity = movConfuso;
         }
-
-
-
-
     }
 
     private void OnMouseDown()
@@ -121,12 +117,18 @@ public class Movimiento : MonoBehaviour
         audioCamara.clip = sonidoChoque;
         audioCamara.Play();
 
+        if (col.gameObject.layer == LayerMask.NameToLayer("Escenario"))
+        {
+            enMovimiento = false;
+            rb.velocity = Vector2.zero;
+            
+        }
+      
+
         if (col.gameObject.CompareTag("Límite"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-        enMovimiento = false;
-        rb.velocity = Vector2.zero;
         movConfuso = Vector2.zero;
     }
 
