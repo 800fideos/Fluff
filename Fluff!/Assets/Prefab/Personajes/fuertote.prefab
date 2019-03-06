@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 8332617750341398894}
   - component: {fileID: 1887966187069175882}
   - component: {fileID: 5322858907799742377}
+  - component: {fileID: 3326595710091682879}
+  - component: {fileID: 1060355856509269824}
   m_Layer: 8
   m_Name: fuertote
   m_TagString: Untagged
@@ -146,7 +148,6 @@ MonoBehaviour:
   paradaAutomatica: 0
   vectorParada: {x: 0, y: 0, z: 0}
   enMovimiento: 0
-  sonidoReposo: {fileID: 0}
   sonidoChoque: {fileID: 0}
   sonidoUnion: {fileID: 0}
 --- !u!82 &5322858907799742377
@@ -245,3 +246,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3326595710091682879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155793404996782264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f07e6f57ff1f15f48af96b49ce0a9d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1060355856509269824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155793404996782264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634aec4c0cf9b964d8a3c88ea4b01b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alrededorPelusas: 00000000
+  spritePelusa: []
+  pelusaUnida: 0
+  padre: {fileID: 0}
+  rayDist: 0.2
+  sumaSprite: 0
