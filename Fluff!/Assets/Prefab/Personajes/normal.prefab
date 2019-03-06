@@ -181,6 +181,8 @@ MonoBehaviour:
   paradaAutomatica: 0
   vectorParada: {x: 0, y: 0, z: 0}
   enMovimiento: 0
+  sonidoChoque: {fileID: 8300000, guid: d2e0f17baf4f0174bae26a02e8366654, type: 3}
+  sonidoUnion: {fileID: 0}
 --- !u!82 &3113307288886120237
 AudioSource:
   m_ObjectHideFlags: 0
@@ -190,12 +192,13 @@ AudioSource:
   m_GameObject: {fileID: 883005155394411181}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 225fb6ea1a30fe74fb7f8599971a4b48, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  OutputAudioMixerGroup: {fileID: 243592014289794810, guid: 87d0df9bca42f1d44b6266cd9b6746e5,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 9db67b964643c3e43829c7ee684bca89, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.3
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
