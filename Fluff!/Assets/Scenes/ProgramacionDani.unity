@@ -720,6 +720,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Men\xFA Completado"
       objectReference: {fileID: 0}
+    - target: {fileID: 9002273189447974255, guid: a51d17d25d1330d4e9caa01c8ff05720,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9002273189447974251, guid: a51d17d25d1330d4e9caa01c8ff05720,
         type: 3}
       propertyPath: m_LocalPosition.x
