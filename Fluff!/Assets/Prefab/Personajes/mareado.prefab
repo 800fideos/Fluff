@@ -118,7 +118,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.028996825, y: -0.078706026}
+  m_Offset: {x: 0.037743807, y: -0.025313616}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5277655, y: 1.5277648}
+  m_Size: {x: 1.9282088, y: 1.9193091}
   m_EdgeRadius: 0
 --- !u!114 &464872038
 MonoBehaviour:
@@ -147,6 +147,9 @@ MonoBehaviour:
   paradaAutomatica: 0
   vectorParada: {x: 0, y: 0, z: 0}
   enMovimiento: 0
+  sonidoReposo: {fileID: 0}
+  sonidoChoque: {fileID: 0}
+  sonidoUnion: {fileID: 0}
 --- !u!82 &464872043
 AudioSource:
   m_ObjectHideFlags: 0
@@ -259,3 +262,5 @@ MonoBehaviour:
   spritePelusa: []
   pelusaUnida: 0
   padre: {fileID: 0}
+  rayDist: 0.2
+  sumaSprite: 0
