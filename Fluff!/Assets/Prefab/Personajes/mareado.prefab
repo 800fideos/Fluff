@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 464872038}
   - component: {fileID: 464872043}
   - component: {fileID: 969663244991505134}
+  - component: {fileID: 2732353350694475182}
   m_Layer: 8
   m_Name: mareado
   m_TagString: Confuso
@@ -147,7 +148,6 @@ MonoBehaviour:
   paradaAutomatica: 0
   vectorParada: {x: 0, y: 0, z: 0}
   enMovimiento: 0
-  sonidoReposo: {fileID: 0}
   sonidoChoque: {fileID: 0}
   sonidoUnion: {fileID: 0}
 --- !u!82 &464872043
@@ -264,3 +264,15 @@ MonoBehaviour:
   padre: {fileID: 0}
   rayDist: 0.2
   sumaSprite: 0
+--- !u!114 &2732353350694475182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464872037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f07e6f57ff1f15f48af96b49ce0a9d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
