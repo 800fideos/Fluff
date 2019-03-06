@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Movimiento : MonoBehaviour
 {
     Rigidbody2D rb;
-
+    public static bool reproduciendoSonido = false;
     public float fuerza_movimiento = 5f;
     Vector2 vector_inicio;
     Vector2 vector_fin;
@@ -16,11 +16,12 @@ public class Movimiento : MonoBehaviour
     public static Vector2 movConfuso;
     public bool enMovimiento = false;
 
-    public AudioClip sonidoReposo;
+    
     public AudioClip sonidoChoque;
     public AudioClip sonidoUnion;
 
     AudioSource audioCamara;
+    AudioSource audioPropio;
 
     void Start()
     {
@@ -28,6 +29,8 @@ public class Movimiento : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 		transform.position = new Vector3 (Mathf.Round (transform.position.x), Mathf.Round (transform.position.y), 0);
         audioCamara = Camera.main.gameObject.GetComponent<AudioSource>();
+        audioPropio = GetComponent<AudioSource>();
+        StartCoroutine(SonidoReposo());
     }
 
     void Update()
@@ -45,6 +48,8 @@ public class Movimiento : MonoBehaviour
         if (transform.CompareTag("Confuso") && !enMovimiento && movConfuso != Vector2.zero){
             rb.velocity = movConfuso;
         }
+
+
 
 
     }
@@ -112,6 +117,7 @@ public class Movimiento : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
+        Debug.Log("Sonido Choque");
         audioCamara.clip = sonidoChoque;
         audioCamara.Play();
 
@@ -128,4 +134,23 @@ public class Movimiento : MonoBehaviour
 		paradaAutomatica = true;
 		vectorParada = parada;
 	}
+
+    IEnumerator SonidoReposo()
+    {
+        while (true)
+        {
+            if (!reproduciendoSonido)
+            {
+                Debug.Log("Reposo:"+transform.name);
+                audioPropio.Play();
+                reproduciendoSonido = true;
+                yield return new WaitForSeconds(audioPropio.clip.length);
+                reproduciendoSonido = false;
+               
+            }
+            yield return new WaitForSeconds(Random.Range(5, 10));
+
+        }
+
+    }
 }
