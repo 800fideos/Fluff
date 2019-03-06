@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CasillaEstrella : MonoBehaviour
 {
-	
-	bool pisandoFuerte = false;
 
     void Start()
     {
@@ -22,7 +20,7 @@ public class CasillaEstrella : MonoBehaviour
 		if (col.gameObject.CompareTag ("Unido")) {
 			
 			GameController.estrellas++;
-			//Queremos que se sume uno al int del int que hay en GameController 
+			//Queremos que se sume uno al int que hay en GameController cuando el personaje se meta en la casilla de estrella
 		}
 	}
 
@@ -30,7 +28,7 @@ public class CasillaEstrella : MonoBehaviour
 		if (col.gameObject.CompareTag ("Unido")) {
 			
 			GameController.estrellas--;
-			//Queremos que se sume uno al int del int que hay en GameController 
+			//Queremos que se reste uno al int que hay en GameController cuando el personaje salga de la casilla de estrella
 		}
 	}
 }
