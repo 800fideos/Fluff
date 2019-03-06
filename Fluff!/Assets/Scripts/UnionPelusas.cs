@@ -199,6 +199,7 @@ public class UnionPelusas : MonoBehaviour
 				Debug.Log (CuentaPelusas.contadorPelusas);
                 col.transform.position = new Vector3(Mathf.Round(col.transform.position.x), Mathf.Round(col.transform.position.y), 0);
                 transform.position = new Vector3(Mathf.Round(transform.position.x), Mathf.Round(transform.position.y), 0);
+				transform.gameObject.tag = "Unido";
             }
             else
             {
@@ -220,5 +221,6 @@ public class UnionPelusas : MonoBehaviour
         col.gameObject.GetComponent<UnionPelusas>().pelusaUnida = true;
         col.gameObject.GetComponent<UnionPelusas>().padre = padre;
         padre.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+		col.transform.gameObject.tag = "Unido";
     }
 }
