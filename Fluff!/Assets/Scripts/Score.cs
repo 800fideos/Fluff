@@ -16,7 +16,7 @@ public class Score : MonoBehaviour
     void Update()
     {
 		if (contadorPelusas == 0) {
-			panel.SetActive ;
+			//panel.SetActive;
 		}
     }
 
