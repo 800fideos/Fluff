@@ -44,6 +44,7 @@ public class UnionPelusas : MonoBehaviour
     {
         padre = new GameObject();
         padre.AddComponent<Movimiento>();
+        padre.AddComponent<UnionPadres>();
         AniadirRigidBodyAPadre();
         AniadirAudioSourceAPadre();
 
@@ -206,6 +207,7 @@ public class UnionPelusas : MonoBehaviour
             }
 
             RevisarPelusasHijas();
+
         }
     }
 
