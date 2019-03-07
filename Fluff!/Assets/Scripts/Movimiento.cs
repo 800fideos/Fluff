@@ -35,7 +35,6 @@ public class Movimiento : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(movConfuso);
 		if (paradaAutomatica) {
 			if (Vector3.Distance(transform.position,vectorParada) < 0.2f) {
 				rb.velocity = Vector2.zero;
@@ -113,23 +112,31 @@ public class Movimiento : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
+        
         if (col.gameObject.CompareTag("Límite"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         enMovimiento = false;
-        rb.velocity = Vector2.zero;
-  
-        transform.parent.GetComponent<Movimiento>().enMovimiento = false;
-        transform.parent.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        if (rb) rb.velocity = Vector2.zero;
 
-        Debug.Log("Colision");
-        Debug.Log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+        if (transform.parent != null)
+        {
+            transform.parent.GetComponent<Movimiento>().enMovimiento = false;
+            transform.parent.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        }
+        else {
+            GetComponent<Movimiento>().enMovimiento = false;
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        }
 
         movConfuso = Vector2.zero;
 
+        Debug.Log("*********************");
         audioCamara.clip = sonidoChoque;
         audioCamara.Play();
+        Debug.Log("SONIDO CHOQUEEEEEEEEEEEEE " + audioCamara.clip);
+        Debug.Log("*********************");
     }
 
 	public void MoveryParar(Vector3 parada){

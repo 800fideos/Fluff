@@ -181,7 +181,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alrededorPelusas: 00000000
-  spritePelusa: []
+  spritePelusa:
+  - {fileID: 21300000, guid: b6a4744b84fa6204982f9dca6b1aff2d, type: 3}
+  - {fileID: 21300000, guid: 8f75cab58cfd5814bbebdf3ddfe6d399, type: 3}
+  - {fileID: 21300000, guid: 0ad208c9062594a45a33bae97419be54, type: 3}
+  - {fileID: 21300000, guid: 3559932caff944845a9c0b93b0e49a26, type: 3}
+  - {fileID: 21300000, guid: c244328a0e215ac4fabb6a1f724aa559, type: 3}
+  - {fileID: 21300000, guid: df5dcc95e7ce5d148b673646d2200b21, type: 3}
+  - {fileID: 21300000, guid: 7e927b946b5eab84b90f9ead06c8822c, type: 3}
+  - {fileID: 21300000, guid: a728da25a82b02a47beb105ecd37fc73, type: 3}
+  - {fileID: 21300000, guid: 752c7fec380f8384596c0519e99206f6, type: 3}
+  - {fileID: 21300000, guid: 073a3e2c9dd496440bb02be8f27cc184, type: 3}
+  - {fileID: 21300000, guid: e6c22763f64b04b45a022b42eeaf3f9f, type: 3}
+  - {fileID: 21300000, guid: 08c1238bf478bd2419f51aa4cfb630eb, type: 3}
+  - {fileID: 21300000, guid: 1d7d75b73f6338e42afb0bcc5a2652c7, type: 3}
+  - {fileID: 21300000, guid: 4a277b13ed7b4f24cb8ab3e17064f9ca, type: 3}
+  - {fileID: 21300000, guid: fa3bb22fa6f773445b8aa9a6d51ba38f, type: 3}
+  - {fileID: 21300000, guid: f5b40245912aac9478fa79da7f9a5b46, type: 3}
   pelusaUnida: 0
   padre: {fileID: 0}
   rayDist: 0.2

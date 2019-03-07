@@ -8,7 +8,6 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -16,6 +15,8 @@ public class Score : MonoBehaviour
     {
 		if (CuentaPelusas.contadorPelusas == 0) {
 			panel.SetActive (true);
+			Debug.Log ("Estrellas " + GameController.estrellas);
+			panel.transform.GetChild(0).GetComponent<Animator> ().SetInteger ("estrellas", GameController.estrellas);
 
 		}
     }
