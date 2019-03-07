@@ -163,10 +163,10 @@ public class UnionPelusas : MonoBehaviour
         alrededorPelusas[(int)Direccion.Izquierda] = LanzarRaycastIzquierdo();
 
         //DEBUG
-        Debug.Log("[" + gameObject.name + "]: " + "Colisión arriba --> " + alrededorPelusas[0]);
-        Debug.Log("[" + gameObject.name + "]: " + "Colisión derecha --> " + alrededorPelusas[1]);
-        Debug.Log("[" + gameObject.name + "]: " + "Colisión Abajo --> " + alrededorPelusas[2]);
-        Debug.Log("[" + gameObject.name + "]: " + "Colisión Izquierda --> " + alrededorPelusas[3]);
+        //Debug.Log("[" + gameObject.name + "]: " + "Colisión arriba --> " + alrededorPelusas[0]);
+       // Debug.Log("[" + gameObject.name + "]: " + "Colisión derecha --> " + alrededorPelusas[1]);
+        //Debug.Log("[" + gameObject.name + "]: " + "Colisión Abajo --> " + alrededorPelusas[2]);
+        //Debug.Log("[" + gameObject.name + "]: " + "Colisión Izquierda --> " + alrededorPelusas[3]);
 
         CambiarSprites(alrededorPelusas);
     }
@@ -196,7 +196,6 @@ public class UnionPelusas : MonoBehaviour
                 UnirPelusa(col);
                 LanzarRaycastsAlrededor();
 				CuentaPelusas.contadorPelusas--;
-				Debug.Log (CuentaPelusas.contadorPelusas);
                 col.transform.position = new Vector3(Mathf.Round(col.transform.position.x), Mathf.Round(col.transform.position.y), 0);
                 transform.position = new Vector3(Mathf.Round(transform.position.x), Mathf.Round(transform.position.y), 0);
 				//transform.gameObject.tag = "Unido";

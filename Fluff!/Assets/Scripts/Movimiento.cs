@@ -113,23 +113,25 @@ public class Movimiento : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log("Sonido Choque");
-        audioCamara.clip = sonidoChoque;
-        audioCamara.Play();
-
-        if (col.gameObject.layer == LayerMask.NameToLayer("Escenario"))
-        {
-            enMovimiento = false;
-            rb.velocity = Vector2.zero;
-            
-        }
       
 
         if (col.gameObject.CompareTag("Límite"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+        enMovimiento = false;
+        rb.velocity = Vector2.zero;
+  
+        transform.parent.GetComponent<Movimiento>().enMovimiento = false;
+        transform.parent.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
+        Debug.Log("Colision");
+        Debug.Log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+
         movConfuso = Vector2.zero;
+
+        audioCamara.clip = sonidoChoque;
+        audioCamara.Play();
     }
 
 	public void MoveryParar(Vector3 parada){
@@ -151,8 +153,6 @@ public class Movimiento : MonoBehaviour
                
             }
             yield return new WaitForSeconds(Random.Range(5, 10));
-
         }
-
     }
 }
