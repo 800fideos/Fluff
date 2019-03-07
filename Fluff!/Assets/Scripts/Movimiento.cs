@@ -113,8 +113,6 @@ public class Movimiento : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-      
-
         if (col.gameObject.CompareTag("Límite"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
