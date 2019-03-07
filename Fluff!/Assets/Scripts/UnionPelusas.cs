@@ -45,6 +45,13 @@ public class UnionPelusas : MonoBehaviour
         padre = new GameObject();
         padre.AddComponent<Movimiento>();
         AniadirRigidBodyAPadre();
+        AniadirAudioSourceAPadre();
+    }
+
+    private void AniadirAudioSourceAPadre()
+    {
+        padre.AddComponent<AudioSource>();
+        padre.GetComponent<Movimiento>().sonidoChoque = GetComponent<Movimiento>().sonidoChoque;
     }
 
     private void AniadirRigidBodyAPadre()
