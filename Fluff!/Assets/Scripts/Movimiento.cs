@@ -112,16 +112,25 @@ public class Movimiento : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
+        
         if (col.gameObject.CompareTag("Límite"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+        
         enMovimiento = false;
-        rb.velocity = Vector2.zero;
-  
-        transform.parent.GetComponent<Movimiento>().enMovimiento = false;
-        transform.parent.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-       
+        if (rb) rb.velocity = Vector2.zero;
+
+        if (transform.parent != null)
+        {
+            transform.parent.GetComponent<Movimiento>().enMovimiento = false;
+            transform.parent.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        }
+        else {
+            GetComponent<Movimiento>().enMovimiento = false;
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        }
+
         movConfuso = Vector2.zero;
 
         Debug.Log("*********************");

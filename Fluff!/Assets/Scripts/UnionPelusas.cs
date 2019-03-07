@@ -46,6 +46,9 @@ public class UnionPelusas : MonoBehaviour
         padre.AddComponent<Movimiento>();
         AniadirRigidBodyAPadre();
         AniadirAudioSourceAPadre();
+
+        /**/padre.AddComponent<Collider2D>();
+
     }
 
     private void AniadirAudioSourceAPadre()
