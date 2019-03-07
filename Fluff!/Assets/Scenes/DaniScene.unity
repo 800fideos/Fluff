@@ -1586,12 +1586,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd2ba98a335e1840a15c1db30b562cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuPrincipal: {fileID: 8300000, guid: 936fca5aeda5cc04eb1486bbcff53500, type: 3}
-  Desvan: {fileID: 8300000, guid: 0f3368fe7fa810d4fbbd65d6af1151d2, type: 3}
-  Salon: {fileID: 8300000, guid: f86913d1473bfb8479eee47797612b14, type: 3}
-  "Ba\xF1o": {fileID: 8300000, guid: dc4bd14ead1adea419a7ebca831c0ea9, type: 3}
-  Cocina: {fileID: 8300000, guid: a3e413257fb5f1942b4edff4cf2f967b, type: 3}
-  Jardin: {fileID: 8300000, guid: 5d489b7b58a79c54f83b8c6783455dfb, type: 3}
+  MenuPrincipal: {fileID: 8300000, guid: e7437495d61386240a032c3b681294bb, type: 3}
+  Desvan: {fileID: 8300000, guid: f388ce257c2587041939e6d7d2215686, type: 3}
+  Salon: {fileID: 8300000, guid: d970b936e2b83da43ae42cf95185b897, type: 3}
+  "Ba\xF1o": {fileID: 8300000, guid: 82692e715c6b0bf418b2bd4be9f2928a, type: 3}
+  Cocina: {fileID: 8300000, guid: 32dbdeac86f7f1749aaf04bc0fafeb0c, type: 3}
+  Jardin: {fileID: 8300000, guid: 6f457f22f0d94f1428d849bc372e2895, type: 3}
 --- !u!114 &1440699090
 MonoBehaviour:
   m_ObjectHideFlags: 0
