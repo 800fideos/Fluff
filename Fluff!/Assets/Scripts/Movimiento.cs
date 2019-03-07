@@ -119,6 +119,7 @@ public class Movimiento : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
         enMovimiento = false;
         rb.velocity = Vector2.zero;
   
