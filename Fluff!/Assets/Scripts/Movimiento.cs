@@ -123,9 +123,6 @@ public class Movimiento : MonoBehaviour
         transform.parent.GetComponent<Movimiento>().enMovimiento = false;
         transform.parent.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
-        Debug.Log("Colision");
-        Debug.Log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-
         movConfuso = Vector2.zero;
 
         audioCamara.clip = sonidoChoque;
