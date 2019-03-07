@@ -108,7 +108,7 @@ public class UnionPelusas : MonoBehaviour
             {
                 sumaSprite = sumaSprite + 8;
             }
-            Debug.Log("sprite" + sumaSprite);
+            
             sr.sprite = spritePelusa[sumaSprite];
         }
     }
@@ -117,14 +117,7 @@ public class UnionPelusas : MonoBehaviour
     {
         Collider2D collider = Physics2D.Raycast(position, direccion, rayDist).collider;
 
-
         Debug.DrawRay(position, direccion * rayDist, Color.red);
-
-        // DEBUG
-        if (collider != null)
-        {
-            Debug.Log(gameObject.name + " etá detectando: " + collider.gameObject.name);
-        }
 
         return (collider != null && collider.gameObject.layer == LayerMask.NameToLayer("Pelusas"));
     }
@@ -161,12 +154,6 @@ public class UnionPelusas : MonoBehaviour
         alrededorPelusas[(int)Direccion.Derecha] = LanzarRaycastDerecha();
         alrededorPelusas[(int)Direccion.Abajo] = LanzarRaycastAbajo();
         alrededorPelusas[(int)Direccion.Izquierda] = LanzarRaycastIzquierdo();
-
-        //DEBUG
-        //Debug.Log("[" + gameObject.name + "]: " + "Colisión arriba --> " + alrededorPelusas[0]);
-       // Debug.Log("[" + gameObject.name + "]: " + "Colisión derecha --> " + alrededorPelusas[1]);
-        //Debug.Log("[" + gameObject.name + "]: " + "Colisión Abajo --> " + alrededorPelusas[2]);
-        //Debug.Log("[" + gameObject.name + "]: " + "Colisión Izquierda --> " + alrededorPelusas[3]);
 
         CambiarSprites(alrededorPelusas);
     }
