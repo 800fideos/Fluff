@@ -40,6 +40,13 @@ public class GameController : MonoBehaviour
 		pausa = false;
 	}
 
+	//public void Siguiente()
+	//{
+		//IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
+		//SceneManager.LoadScene(SceneManager.Ge().buildIndex);
+		//pausa = false;
+	//}
+
 	public void IniciarJuego(){
 
 		pausa = false;
