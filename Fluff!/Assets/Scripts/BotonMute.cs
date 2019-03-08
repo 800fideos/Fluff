@@ -24,7 +24,7 @@ public class BotonMute : MonoBehaviour
 	{
 
 	}
-	void Awake(){
+	void Awake(){//Esta función nos permite instanciar la música para evitar que deje de sonar en escenas posteriores
 		if (instance == null) {
 			instance = this;
 		} else if (instance != this) {
@@ -33,16 +33,16 @@ public class BotonMute : MonoBehaviour
 		DontDestroyOnLoad (gameObject);
 	}
 
-	public void MuteMusica (){
-		if (butMusic.image.sprite == OnMusica){
+	public void MuteMusica (){//Con esta función manejamoslos sprites del botón
+		if (butMusic.image.sprite == OnMusica){//Aquí indicamos que si ocurre esto el sprite cambia. Esto luego lo meteremos en el Onclick del botón para que haga el cambio
 			
 			butMusic.image.sprite = OffMusica;
 		}
 		else
-			butMusic.image.sprite = OnMusica;
+			butMusic.image.sprite = OnMusica;//Y aquí indicamos que si pasa otra cosa diferente se mantiene el que tiene por defecto
 	}
 
-	public void MuteSonido (){
+	public void MuteSonido (){ //esta función y sus subsiguientes líneas hacen lo mismo que la anterior pero para otro botón
 		if (butSonido.image.sprite == OnSonido) {
 
 			butSonido.image.sprite = OffSonido;
@@ -51,7 +51,7 @@ public class BotonMute : MonoBehaviour
 
 	}
 
-	public void Mute (){
+	public void Mute (){//esta función silencia la música
 		isMute = !isMute;
 		AudioListener.volume = isMute ? 0 : 1;
 	}
