@@ -8,7 +8,7 @@ public class CuentaPelusas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		contadorPelusas++;
+        contadorPelusas++;
 		Debug.Log (contadorPelusas);
     }
 
