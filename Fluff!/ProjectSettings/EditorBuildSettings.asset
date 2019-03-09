@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mundo1_Desvan/Mundo1_Nivel4.unity
     guid: a29c40fb12164e546b08b6796ec86b9b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mundo1_Desvan/Mundo1_Nivel5.unity
     guid: c0cc7256f4a397f4bb5b75bbe7dea7df
   - enabled: 1
@@ -44,7 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mundo2_Salon/Mundo2_Nivel4.unity
     guid: d3b4ebbe3421e0a43a6c5bb2027731b4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mundo2_Salon/Mundo2_Nivel5.unity
     guid: ceda90ca3e31ea644b4c9e1287b11702
   - enabled: 1
@@ -62,7 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mundo5_Jardin/Mundo5_Nivel4.unity
     guid: f333adecf78a3dc4fb278f1c7466c99c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mundo5_Jardin/Mundo5_Nivel5.unity
     guid: a48b3e61c1d60104881726dfd0ca0636
   - enabled: 1
@@ -80,7 +80,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mundo4_Cocina/Mundo4_Nivel4.unity
     guid: 891902c4f45b39749977e2e0fc79f1c0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mundo4_Cocina/Mundo4_Nivel5.unity
     guid: 035fc1826a005db41b11f1726e1f72c2
   - enabled: 1
