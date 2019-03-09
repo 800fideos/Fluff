@@ -238,7 +238,7 @@ Revisión de fallos en interfaz y carga de niveles.
 
 * #6 El movimiento se bugeaba cuando se unían ciertas pelusas.
 
-* #7 Al unirse las pelusas dejaba de sonar el sonido de choque debido a que el padre que se formaba carecía de rigidbody. 
+* #7 Al unirse las pelusas dejaba de sonar el sonido de choque debido a que se destruían los rigidbody de los hijos y el padre no tenía collider, por tanto, el padre no llegaba a colisionar. 
 
 * #8 Al revisar distintos niveles y probar distintas cosas descubrimos fallos como que algunos botones no cargaban la selección de mundo que le tocaba o que el menú de pausa no reiniciaba el contador de pelusas (para la puntuación) de forma correcta.
 
@@ -257,7 +257,7 @@ Revisión de fallos en interfaz y carga de niveles.
 
 * #6 Como el movimiento en general, la recolocación del AudioSource en el script solucionó esto. 
 
-* #7 A través del script hicimos que se creara un rigidbody en los padres al unirse las pelusas. Además en el script de movimiento metimos el sonido de choque a través del código porque no se podía meter desde del editor.
+* #7 A través del script hicimos que se creara un collider en los padres al unirse las pelusas. Además en el script de movimiento metimos el sonido de choque a través del código porque no se podía meter desde del editor.
 
 * #8 Cambiamos los valores necesarios en el editor y en los scripts para que todo se cargase de forma correcta.
 
