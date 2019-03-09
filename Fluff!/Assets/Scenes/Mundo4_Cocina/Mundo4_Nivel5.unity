@@ -1426,7 +1426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 067f70dc99fac104693a5ca7a52941b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camaraMenu: {fileID: 0}
+  camaraMenu: {fileID: 2146957690}
   menuPrincipal: {fileID: 1349020326}
 --- !u!1 &2146957690
 GameObject:
