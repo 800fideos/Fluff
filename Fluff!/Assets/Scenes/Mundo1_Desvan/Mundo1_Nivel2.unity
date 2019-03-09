@@ -384,7 +384,7 @@ PrefabInstance:
     - target: {fileID: 4392268827372439902, guid: a3049e3c649f77947ab76a4f00b0dc69,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.72
+      value: -0.96
       objectReference: {fileID: 0}
     - target: {fileID: 4392268827372439902, guid: a3049e3c649f77947ab76a4f00b0dc69,
         type: 3}
@@ -953,7 +953,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4185777997163439847, guid: b1ab369eac61f2948bd0e758494dde4e, type: 3}
+    - {fileID: 4185777997163439864, guid: b1ab369eac61f2948bd0e758494dde4e, type: 3}
+    - {fileID: 4185777997163439865, guid: b1ab369eac61f2948bd0e758494dde4e, type: 3}
+    - {fileID: 4185777997163439866, guid: b1ab369eac61f2948bd0e758494dde4e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b1ab369eac61f2948bd0e758494dde4e, type: 3}
 --- !u!1001 &1974968110
 PrefabInstance:
@@ -966,6 +970,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Men\xFA Completado"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9002273189447974255, guid: a51d17d25d1330d4e9caa01c8ff05720,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9002273189447974251, guid: a51d17d25d1330d4e9caa01c8ff05720,
         type: 3}
