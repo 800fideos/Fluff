@@ -41,12 +41,12 @@ public class GameController : MonoBehaviour
         CuentaPelusas.contadorPelusas = 0;
 	}
 
-	//public void Siguiente()
-	//{
+	public void Siguiente()
+	{
 		//IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
-		//SceneManager.LoadScene(SceneManager.Ge().buildIndex);
-		//pausa = false;
-	//}
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+		pausa = false;
+	}
 
 	public void IniciarJuego(){
 
