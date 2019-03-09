@@ -6,13 +6,11 @@
 * #60 Script de movimiento de los personajes.
 * #71 Script de habilidad especial del personaje "mojado".
 * #73 Creación del personaje "mojado".
-<<<<<<< HEAD
 
 #### Miguel
 =======
 * #26 Ayuda con el script del prop botón y muro. 
 * #72 Script de unión de las pelusas. (INCOMPLETO)
->>>>>>> afd9929d2078d0a60a8c76270762053673ea85fc
 
 #### Daniel
 * #9 Olla
@@ -268,11 +266,9 @@ Además de esto he colaborado en la creación de diversos scripts aparte que no 
 
 #7 A través del script hicimos que se creara un rigidbody en los padres al unirse las pelusas. Además en el script de movimiento metimos el sonido de choque a través del código porque no se podía meter desde del editor.
 
-
-
 ### ¿Se han completado todas las tareas? Si la respuesta es no, ¿por qué no?
 	
-	Las tareas que teníamos previstas desde un principio y que no se han completado, han sido tareas que hemos pospuesto por centrarnos en mecánicas básicas del juego y al llevarnos más tiempo de lo que planeamos, hemos dejado de lado las que eran menos importantes.
+Las tareas que teníamos previstas desde un principio y que no se han completado, han sido tareas que hemos pospuesto por centrarnos en mecánicas básicas del juego y al llevarnos más tiempo de lo que planeamos, hemos dejado de lado las que eran menos importantes.
 
-	Además después de la entrega que hicimos y la fase de testeo, han surgido errores en scripts, props y demás elementos que hasta la fase de testeo no hemos detectado que fallaban hasta la prueba y por tanto hemos puesto esas nuevas tareas importantes por delante de otras tareas más secundarias.
+Además después de la entrega que hicimos y la fase de testeo, han surgido errores en scripts, props y demás elementos que hasta la fase de testeo no hemos detectado que fallaban hasta la prueba y por tanto hemos puesto esas nuevas tareas importantes por delante de otras tareas más secundarias.
 
