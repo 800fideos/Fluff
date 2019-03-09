@@ -1212,7 +1212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 067f70dc99fac104693a5ca7a52941b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camaraMenu: {fileID: 0}
+  camaraMenu: {fileID: 822504772}
   menuPrincipal: {fileID: 743007086}
 --- !u!1001 &7179376592781302132
 PrefabInstance:
