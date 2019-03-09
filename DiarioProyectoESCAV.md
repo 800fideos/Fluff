@@ -7,7 +7,6 @@
 * #71 Script de habilidad especial del personaje "mojado".
 * #73 Creación del personaje "mojado".
 <<<<<<< HEAD
-* #
 
 #### Miguel
 =======
@@ -130,3 +129,150 @@ Colonador
 
 #### Se han completado todas las tareas? Si la respuesta es no, por qué no?
 No se han completado todas las tareas, las que han quedado eran de programación. No se completaron porque las otras tareas de prgramación nos llevaron más tiempo del que esperábamos y esto retrasó las que no se han completado.
+
+
+## Sprint 1 (18 feb -> 11 mar)
+### Resumen
+
+#### Ramón
+
+* #71 Script de la habilidad especial del personaje mojado.  (FINALIZADO)
+* #70 Creación en Unity del personaje unidos.
+* #72 Script de unión de personajes.
+* #137 Arreglar movimiento de todos los personajes
+* #64 Script de la habilidad especial
+* #26 Botón y muro 
+
+#### Oufan
+* #23 Script del prop especial de Clonador (Reajuste del prop)
+* #24 Diseño, animación y script del prop especial Muelle (Reajuste del rebote)
+* #26 Diseño, animación y script del prop especial Botón + Muro (Reajuste del script)
+* #27 Diseño y script del prop especial Cinta (Reajuste del script)
+* #28 Script del prop especial Cono
+* #67 Script del personaje Fuerte
+
+A parte de crear el script de los props y personajes que empujan, he hecho también el script de recolocamiento de todos los elementos y colocárselos en el prefab para que al pulsar play se recoloquen automáticamente en coordenadas enteras. 
+
+#### Dani
+* #61 Script de Personaje (Calvito)
+* #101 Script poner/quitar música (Botones que silencian los sonidos) 
+* #131 Script Mantener Música y Cambio (Hacer que la música suene en todas las escenas)
+* #99 Script poner/quitar sonido (Botones que silencian los sonidos)
+* #114 Colocación de Botones (Colocar botones en el menú de nivel completado y hacerlos funcionales)
+* #116 Colocación de estrellas (Poner las estrellas en el menú y hacerles animación)
+* #19 Casilla de estrella (Crear casillas de estrella y generarles script)
+* #117 Script estrellas (conteo de estrellas que consigues y mostrarlas en el menú) 
+* #65 Script de Personaje (eléctrico)
+
+Además de esto he colaborado en la creación de diversos scripts aparte que no se me han terminado asignando porque he ofrecido ayuda de manera puntual. He recolocado varias partes de la interfaz que se habían roto y he ido colocando los menús en sus respectivas escenas.
+
+#### Ana
+* #121 | Imagen redes sociales
+* #122 | Logo juego
+* #130 | Preparar assets para la Play Store
+* #133 | Ajustar Cámaras y Fondos - Mundo 3, Baño
+* #133 | Ajustar Cámaras y Fondos - Mundo 4, Cocina
+* #128 | Dar de alta en Itch.io.
+
+** Redactar contenidos
+** Preparación capturas de pantalla
+** Creación de fondo en Photoshop
+** Creación banner
+** Corrección de los sprites png y su tamaño para colocarlo
+** Animación salto.
+
+#### Miguel
+* #127 Ajuste cámaras
+* #41 Sonido reposo
+* #44 Sonido reposo mojado
+* #53 Sonido reposo fuerte
+* #29 Menú principal y selector de niveles (Mundo1)
+* #33 Mundo4 (Música)
+* #30 Mundo1 (Música)
+* #31 Mundo2 (Música)
+* #32 Mundo3 (Música)
+* #34 Mundo5 (Música)
+* #56 Sonido reposo Unidos
+* #54 Sonido choque fuerte
+* #50 Sonido reposo eléctrico
+* #36 Sonido choque normal
+* #43 Sonido unión normal
+* #37 Sonido unión dormilón
+* #45 Sonido choque mojado
+* #47 Sonido reposo calvo
+* #48 Sonido choque calvo
+* #38 Sonido reposo confuso
+* #39 Sonido choque confuso
+* #42 Sonido choque dormilón
+* #51 Sonido choque eléctrico
+
+#### Pavel
+* #29 Menú principal y selector de niveles (Mundo1)
+* #30 Mundo1 (Música)
+* #31 Mundo2 (Música)
+* #32 Mundo3 (Música)
+* #33 Mundo4 (Música)
+* #34 Mundo5 (Música)
+* #36 Sonido choque normal
+* #37 Sonido unión dormilón
+* #38 Sonido reposo confuso
+* #39 Sonido choque confuso
+* #41 Sonido reposo
+* #42 Sonido choque dormilón
+* #43 Sonido unión normal
+* #44 Sonido reposo mojado
+* #45 Sonido choque mojado
+* #46 Sonido unión mojado
+* #47 Sonido reposo calvo
+* #48 Sonido choque calvo
+* #50 Sonido reposo eléctrico
+* #51 Sonido choque eléctrico
+* #53 Sonido reposo fuerte
+* #54 Sonido choque fuerte
+* #56 Sonido reposo Unidos
+* #57 Sonido choque Unidos
+*#127 Ajuste de Cámaras
+*#136 Arreglar Sonido
+
+
+## Retrospectiva del sprint
+
+### Problemas que han surgido
+
+#1 Los fondos no se adaptaban a las dimensiones que nos hacían falta para que los personajes se recolocasen automáticamente en coordenadas enteras en el centro de cada cuadrado del fondo.
+
+#2 Al crear el script de auto-recolocamiento nos dimos cuenta de que los personajes chocan entre sí y con los props de la escena desde las esquinas de los sprites debido a que los colliders chocaban entre ellos aunque el sprite no lo hiciera. 
+
+#3 El AudioSource empezó a dar conflicto con el script de movimiento, provocando un bug que impedía a los personajes moverse cuando interaccionaban con los props.
+
+#4 Los sprites de unidos no se detectaban bien y generaban formas extrañas.
+ 
+#5 Al exportar el gif horizontal para itch.io con el tamaño de lienzo era prácticamente imposible de exportar, tanto por formato, porque petaba, porque no había opción de transparencia, porque pesaba mucho… Cuando conseguí exportarlo, el degradado daba problemas (dejaba un recorte blanco alrededor) y tuve que repetir los sprites. 
+
+#6 El movimiento se bugeaba cuando se unían ciertas pelusas.
+
+#7 Al unirse las pelusas dejaba de sonar el sonido de choque debido a que el padre que se formaba carecía de rigidbody. 
+
+	
+### Soluciones
+
+#1 Los fondos se rehicieron completamente cogiendo los colores de los diseños originales pero adaptando la cuadrícula a lo que buscábamos.
+
+#2 Se ha hecho una revisión de los personajes, props normales y props especiales para que no se den choques indeseados.
+
+#3 Se recolocó el AudioSource en el script para dejarlo abajo del todo y que no interfiriese con el resto del script, además de esto le volvimos a colocar los sonidos que habían desaparecido y eran parte del error.
+
+#4 Se volvieron a retocar el como se desplegaban dichos sprites en el propio scrpt y en la consola.
+
+#5 Rehice la animación en Flash, que sí tiene opción de gif+png directamente desde el programa.
+
+#7 A través del script hicimos que se creara un rigidbody en los padres al unirse las pelusas. Además en el script de movimiento metimos el sonido de choque a través del código porque no se podía meter desde del editor.
+
+
+
+### ¿Se han completado todas las tareas? Si la respuesta es no, ¿por qué no?
+	
+	Las tareas que teníamos previstas desde un principio y que no se han completado, han sido tareas que hemos pospuesto por centrarnos en mecánicas básicas del juego y al llevarnos más tiempo de lo que planeamos, hemos dejado de lado las que eran menos importantes.
+
+	Además después de la entrega que hicimos y la fase de testeo, han surgido errores en scripts, props y demás elementos que hasta la fase de testeo no hemos detectado que fallaban hasta la prueba y por tanto hemos puesto esas nuevas tareas importantes por delante de otras tareas más secundarias.
+
