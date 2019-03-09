@@ -130,7 +130,7 @@ Colonador
 No se han completado todas las tareas, las que han quedado eran de programación. No se completaron porque las otras tareas de prgramación nos llevaron más tiempo del que esperábamos y esto retrasó las que no se han completado.
 
 
-## Sprint 1 (18 feb -> 11 mar)
+## Sprint 1 (18 feb -> 8 mar)
 ### Resumen
 
 
