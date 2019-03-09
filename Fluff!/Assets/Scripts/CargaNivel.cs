@@ -23,7 +23,8 @@ public class CargaNivel : MonoBehaviour
         //IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
         SceneManager.LoadScene("mundo1");
         CambiarCancion(2);
-
+        GameController.pausa = false;
+        CuentaPelusas.contadorPelusas = 0;
     }
 
     public void CargaMundo2()
@@ -31,6 +32,8 @@ public class CargaNivel : MonoBehaviour
         //IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
         SceneManager.LoadScene("mundo2seleccion");
         CambiarCancion(3);
+        GameController.pausa = false;
+        CuentaPelusas.contadorPelusas = 0;
     }
 
 
@@ -39,6 +42,8 @@ public class CargaNivel : MonoBehaviour
         //IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
         SceneManager.LoadScene("mundo3seleccion");
         CambiarCancion(4);
+        GameController.pausa = false;
+        CuentaPelusas.contadorPelusas = 0;
     }
 
 
@@ -47,6 +52,8 @@ public class CargaNivel : MonoBehaviour
         //IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
         SceneManager.LoadScene("mundo4seleccion");
         CambiarCancion(5);
+        GameController.pausa = false;
+        CuentaPelusas.contadorPelusas = 0;
     }
 
 
@@ -55,6 +62,8 @@ public class CargaNivel : MonoBehaviour
         //IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
         SceneManager.LoadScene("mundo5seleccion");
         CambiarCancion(6);
+        GameController.pausa = false;
+        CuentaPelusas.contadorPelusas = 0;
     }
 
     public void CambiarCancion(int nivel) {
