@@ -80,7 +80,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mundo4_Cocina/Mundo4_Nivel4.unity
     guid: 891902c4f45b39749977e2e0fc79f1c0
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Mundo4_Cocina/Mundo4_Nivel5.unity
     guid: 035fc1826a005db41b11f1726e1f72c2
   - enabled: 1
