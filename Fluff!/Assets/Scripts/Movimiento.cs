@@ -46,6 +46,7 @@ public class Movimiento : MonoBehaviour
 
         if (transform.CompareTag("Confuso") && !enMovimiento && movConfuso != Vector2.zero){
             rb.velocity = movConfuso;
+            enMovimiento = true;
         }
     }
 
@@ -107,6 +108,7 @@ public class Movimiento : MonoBehaviour
         if (transform.CompareTag("Confuso") && movConfuso == Vector2.zero)
         {
             movConfuso = rb.velocity;
+            enMovimiento = true;
         }
     }
 
