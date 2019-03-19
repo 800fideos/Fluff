@@ -45,6 +45,7 @@ public class UnionPelusas : MonoBehaviour
         padre = new GameObject();
         padre.AddComponent<Movimiento>();
         padre.AddComponent<UnionPadres>();
+        padre.gameObject.tag = "Unido";
         AniadirRigidBodyAPadre();
         AniadirAudioSourceAPadre();
 
