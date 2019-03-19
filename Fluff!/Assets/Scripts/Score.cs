@@ -18,8 +18,9 @@ public class Score : MonoBehaviour
             panel.SetActive (true);
 			Debug.Log ("Estrellas " + GameController.estrellas);
 			panel.transform.GetChild(0).GetComponent<Animator> ().SetInteger ("estrellas", GameController.estrellas);
+         
 
-		}
+        }
     }
-		
+
 }
