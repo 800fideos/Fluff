@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7909981644639370421}
   - component: {fileID: 588018824831883734}
   - component: {fileID: 8797177476726516027}
+  - component: {fileID: 8549348853696235751}
   m_Layer: 8
   m_Name: dormido
   m_TagString: Untagged
@@ -260,3 +261,15 @@ MonoBehaviour:
   padre: {fileID: 0}
   rayDist: 0.2
   sumaSprite: 0
+--- !u!114 &8549348853696235751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9054622785404537007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f07e6f57ff1f15f48af96b49ce0a9d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
