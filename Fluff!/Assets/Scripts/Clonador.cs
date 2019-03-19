@@ -29,14 +29,19 @@ public class Clonador : MonoBehaviour
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
-		if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas"))
+		if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas") && !col.gameObject.CompareTag("Unido"))
 		{
 			pelusa = col.gameObject;
-		}
+        }
 
+        if (col.gameObject.CompareTag("Unido"))
+        {
+            col.transform.parent.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            col.transform.parent.GetComponent<Movimiento>().enMovimiento = false;
+        }
+       
 
-
-		if(Time.time > temporizador) {
+        if (Time.time > temporizador) {
 			GeneraPelusa ();
 			temporizador = Time.time + tiempoPausa;
 		}
