@@ -17,7 +17,7 @@ public class CasillaEstrella : MonoBehaviour
     }
 
 	void OnTriggerEnter2D (Collider2D col){
-		if (col.gameObject.CompareTag ("Unido")) {
+		if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas")) {
 			
 			GameController.estrellas++;
 			//Queremos que se sume uno al int que hay en GameController cuando el personaje se meta en la casilla de estrella
@@ -25,10 +25,10 @@ public class CasillaEstrella : MonoBehaviour
 	}
 
 	void OnTriggerExit2D (Collider2D col){
-		if (col.gameObject.CompareTag ("Unido")) {
+		if (col.gameObject.layer == LayerMask.NameToLayer("Pelusas")) {
 			
 			GameController.estrellas--;
 			//Queremos que se reste uno al int que hay en GameController cuando el personaje salga de la casilla de estrella
-		}
+		   }
 	}
 }
