@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 3392894109914588541}
   m_Layer: 8
   m_Name: mojado
-  m_TagString: Untagged
+  m_TagString: Mojado
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0048503876, y: -0.05762291}
+  m_Offset: {x: 0.018203735, y: -0.04615259}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -110,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9495316, y: 1.9245424}
+  m_Size: {x: 1.8827667, y: 1.8748965}
   m_EdgeRadius: 0
 --- !u!50 &7209257168204897736
 Rigidbody2D:
