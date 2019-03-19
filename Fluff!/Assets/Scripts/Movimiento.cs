@@ -16,14 +16,14 @@ using UnityEngine.SceneManagement;
 public class Movimiento : MonoBehaviour
 {
     // Creación de las variables necesarias para el movimiento.
-    Rigidbody2D rb;
-    public float fuerza_movimiento = 5f;
-    Vector2 vector_inicio;
+    Rigidbody2D rb; // Rigidbody del personaje. 
+    public float fuerza_movimiento = 5f; // Fuerza con la que el personaje se moverá.
+    Vector2 vector_inicio; 
     Vector2 vector_fin;
     Vector2 resta_vector;
-	public bool paradaAutomatica = false;
+	public bool paradaAutomatica = false; 
 	public Vector3 vectorParada;
-    public bool enMovimiento = false;
+    public bool enMovimiento = false; //  Variable que controla si el personaje está en movimiento o no, si es falsa el jugador podrá mover el personaje. 
 
     // Creación de la variable para el control de los personajes Confusos.
     public static Vector2 movConfuso;
@@ -42,7 +42,7 @@ public class Movimiento : MonoBehaviour
 		transform.position = new Vector3 (Mathf.Round (transform.position.x), Mathf.Round (transform.position.y), 0); //Línea que ajusta los personajes a una coordenada exacta.
         audioCamara = Camera.main.gameObject.GetComponent<AudioSource>(); // Añadimos el audio principal a la cámara.
         audioPropio = GetComponent<AudioSource>(); // Añadimos el audio al personaje.
-        StartCoroutine(SonidoReposo()); // 
+        StartCoroutine(SonidoReposo()); // Hace que la reproducción de sonido no dependa del Update.
     }
 
     void Update()
@@ -169,18 +169,19 @@ public class Movimiento : MonoBehaviour
 		vectorParada = parada;
 	}
 
+    // Función que controlará el sonido de los personajes. 
     IEnumerator SonidoReposo()
     {
         while (true)
         {
-            if (!reproduciendoSonido)
+            if (!reproduciendoSonido) // Si no se está reproduciendo el sonido en reposo...
             {
-                audioPropio.Play();
-                reproduciendoSonido = true;
-                yield return new WaitForSeconds(audioPropio.clip.length);
-                reproduciendoSonido = false;
+                audioPropio.Play(); // Reproduce el sonido.
+                reproduciendoSonido = true; // Hace que el bucle siga activo.
+                yield return new WaitForSeconds(audioPropio.clip.length); // Espera la duración del clip para que se vuelva a reproducir. 
+                reproduciendoSonido = false; // Hace que salga del bucle.
             }
-            yield return new WaitForSeconds(Random.Range(5, 10));
+            yield return new WaitForSeconds(Random.Range(5, 10)); // Espera un tiempo aleatorio para volver a reproducir el sonido.
         }
     }
 }
