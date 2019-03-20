@@ -243,18 +243,18 @@ MonoBehaviour:
   spritePelusa:
   - {fileID: 21300000, guid: 63f9fe365296f3e40a414de4f125d115, type: 3}
   - {fileID: 21300000, guid: 8f75cab58cfd5814bbebdf3ddfe6d399, type: 3}
-  - {fileID: 21300000, guid: 0ad208c9062594a45a33bae97419be54, type: 3}
-  - {fileID: 21300000, guid: 3559932caff944845a9c0b93b0e49a26, type: 3}
+  - {fileID: 21300000, guid: 3ee87ad2f1beb79498a50715204259b9, type: 3}
+  - {fileID: 21300000, guid: 108c26a9d32e12644b43b58934597232, type: 3}
   - {fileID: 21300000, guid: c244328a0e215ac4fabb6a1f724aa559, type: 3}
   - {fileID: 21300000, guid: df5dcc95e7ce5d148b673646d2200b21, type: 3}
-  - {fileID: 21300000, guid: 7e927b946b5eab84b90f9ead06c8822c, type: 3}
+  - {fileID: 21300000, guid: cd2856ed25100bb4fa27701a04f283d4, type: 3}
   - {fileID: 21300000, guid: a728da25a82b02a47beb105ecd37fc73, type: 3}
-  - {fileID: 21300000, guid: 752c7fec380f8384596c0519e99206f6, type: 3}
-  - {fileID: 21300000, guid: 073a3e2c9dd496440bb02be8f27cc184, type: 3}
+  - {fileID: 21300000, guid: 6d3a844967ff6d14483ea6f373f77369, type: 3}
+  - {fileID: 21300000, guid: 98772bdd45237134ab35b0da0a24ebb0, type: 3}
   - {fileID: 21300000, guid: e6c22763f64b04b45a022b42eeaf3f9f, type: 3}
   - {fileID: 21300000, guid: 08c1238bf478bd2419f51aa4cfb630eb, type: 3}
-  - {fileID: 21300000, guid: 1d7d75b73f6338e42afb0bcc5a2652c7, type: 3}
-  - {fileID: 21300000, guid: 4a277b13ed7b4f24cb8ab3e17064f9ca, type: 3}
+  - {fileID: 21300000, guid: 8128aa9bd5745c5429b1d180cf8c8937, type: 3}
+  - {fileID: 21300000, guid: c667e8bc44c8eba4f99ac0b48630238b, type: 3}
   - {fileID: 21300000, guid: fa3bb22fa6f773445b8aa9a6d51ba38f, type: 3}
   - {fileID: 21300000, guid: f5b40245912aac9478fa79da7f9a5b46, type: 3}
   pelusaUnida: 0
