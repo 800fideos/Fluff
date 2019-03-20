@@ -23,6 +23,7 @@ public class ParaPelusas : MonoBehaviour
         {
             col.transform.position = transform.position;
             col.GetComponent<Rigidbody2D>().velocity = (col.transform.position * 0);
+            col.GetComponent<Movimiento>().enMovimiento = false;
         }
     }
     public void SetPadre(GameObject padre)

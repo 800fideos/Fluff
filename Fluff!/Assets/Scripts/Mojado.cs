@@ -49,22 +49,22 @@ public class Mojado : MonoBehaviour
     {
         Debug.Log("Creando Charco");
         Vector3 posicionCharco = new Vector3(transform.position.x, transform.position.y, - 0.5f);
-        if (rb.velocity.x > 0f && transform.position.x > posicionInicial.x + 1.5f)
+        if (rb.velocity.x > 0f && transform.position.x > posicionInicial.x + 2f)
         {
             SoltarCharco(posicionCharco, Vector3.zero);
             posicionInicial = posicionCharco;
         }
-        if (rb.velocity.x < 0f && transform.position.x < posicionInicial.x - 1.5f)
+        if (rb.velocity.x < 0f && transform.position.x < posicionInicial.x - 2f)
         {
             SoltarCharco(posicionCharco, Vector3.zero);
             posicionInicial = posicionCharco;
         }
-        if(rb.velocity.y > 0f && transform.position.y > posicionInicial.y + 1.5f)
+        if(rb.velocity.y > 0f && transform.position.y > posicionInicial.y + 2f)
         {
             SoltarCharco(posicionCharco, new Vector3(0, 0, 90));
             posicionInicial = posicionCharco;
         }
-        if (rb.velocity.y < 0f && transform.position.y < posicionInicial.y - 1.5f)
+        if (rb.velocity.y < 0f && transform.position.y < posicionInicial.y - 2f)
         {
             SoltarCharco(posicionCharco, new Vector3(0, 0, 90));
             posicionInicial = posicionCharco;
