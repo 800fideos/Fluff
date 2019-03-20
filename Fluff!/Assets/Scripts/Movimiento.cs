@@ -1,6 +1,6 @@
 ﻿/* Movimiento.cs
  * 19/03/2019
- * Versión: 0.6
+ * Versión: 0.3
  * Realizado en su mayoría por @monchburg (Ramón González)
  * Parte de sonido realizada por @pavel13 (Pablo Jiménez)
  * Comentado por @monchburg (Ramón González)
