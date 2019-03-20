@@ -1,26 +1,35 @@
-﻿using System.Collections;
+﻿/* GameManager.cs
+ * 19/03/2019
+ * Versión: 0.3
+ * Realizado por @Viejastirpe (Daniel Jiménez) y @pavel13 (Pablo Jiménez)
+ * Comentado por @Viejastirpe (Daniel Jiménez)
+ * Script que controla el audio del juego
+ * 
+ * */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
 public class GameManager : MonoBehaviour
 {
-	public static GameManager instance = null;
+	public static GameManager instance = null; //Un static de este script que es nulo
 
-    public AudioClip MenuPrincipal;
+    public AudioClip MenuPrincipal; //esta variable y las siguientes crean los clips de audio que corresponden a cada mundo y este en concreto al menú principal
     public AudioClip Desvan;
     public AudioClip Salon;
     public AudioClip Baño;
     public AudioClip Cocina;
     public AudioClip Jardin;
 
-    private AudioSource audioSource;
+    private AudioSource audioSource; //Crea una variable de Audiosource
 
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>(); //Inicializa la variable Audiosource
     }
 
     // Update is called once per frame
@@ -28,7 +37,7 @@ public class GameManager : MonoBehaviour
     {
         
     }
-	void Awake(){
+	void Awake(){ //Esta función reproduce la música constatemente en todas las escenas sin qu se destruya cuando se carga una nueva
 		if (instance == null)
 			instance = this;
 		else if (instance != this)
@@ -36,7 +45,7 @@ public class GameManager : MonoBehaviour
 		DontDestroyOnLoad (gameObject);
 	}
 
-    public void CambiarCancion(int nivel)
+    public void CambiarCancion(int nivel) //esta función cambia las canciones entre escenas principales, detiene el audiosource actual e inicia otro en función de que escena sea
     {
         audioSource.Stop();
         if (nivel == 1) //MenuPrincipal

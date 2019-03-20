@@ -1,17 +1,28 @@
-﻿using System.Collections;
+﻿/* BotónMute.cs
+ * 19/03/2019
+ * Versión: 0.3
+ * Realizado por @Viejastirpe (Daniel Jiménez)
+ * Comentado por @Viejastirpe (Daniel Jiménez)
+ * Script que controla las funciones del boton de silenciar el sonido.
+ * 
+ * */
+
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BotonMute : MonoBehaviour
 {
-	public Sprite OffMusica;
-	public Sprite OnMusica;
-	public Sprite OffSonido;
-	public Sprite OnSonido;
-	public Button butMusic;
-	public Button butSonido;
-	bool isMute;
+	public Sprite OffMusica; //Genera la variable de un sprite offmusica
+	public Sprite OnMusica; //Genera la variable de un sprite onmusica
+    public Sprite OffSonido;//Genera la variable de un sprite offsonido
+    public Sprite OnSonido; //Genera la variable de un sprite onsonido
+    public Button butMusic; //Genera la variable de un botón de música
+	public Button butSonido; //Genera la variable de un botón de sonido
+    bool isMute; //Crea un booleano para indicar que el sonido está quitado
 	public static BotonMute instance = null;
 	// Start is called before the first frame update
 	void Start()

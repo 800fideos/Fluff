@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿/* CargaMenú.cs
+ * 19/03/2019
+ * Versión: 0.3
+ * Realizado por @Viejastirpe (Daniel Jiménez)
+ * Comentado por @Viejastirpe (Daniel Jiménez)
+ * Script que controla la carga de escenas, en concreto de la selección de mundos y el menú principal.
+ * 
+ * */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -18,13 +27,13 @@ public class CargaMenú : MonoBehaviour
     }
 
 
-    public void CargaNivel()
+    public void CargaNivel() //esta función carga la escena indicada más abajo entre comillas
     {
         //IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
         SceneManager.LoadScene("seleccionmundos");
     }
 
-    public void CargaMenu()
+    public void CargaMenu() //esta función carga la escena indicada más abajo entre comillas
     {
         //IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
         SceneManager.LoadScene("DaniScene");

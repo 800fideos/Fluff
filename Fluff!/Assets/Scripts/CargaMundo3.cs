@@ -1,4 +1,13 @@
-﻿using UnityEngine;
+﻿/* CargaMundo3.cs
+ * 19/03/2019
+ * Versión: 0.3
+ * Realizado por @Viejastirpe (Daniel Jiménez)
+ * Comentado por @Viejastirpe (Daniel Jiménez)
+ * Script que controla las cargas de escenas, en este caso los niveles del mundo 3.
+ * 
+ * */
+
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
@@ -15,8 +24,8 @@ public class CargaMundo3 : MonoBehaviour
 	{
 
 	}
-	public void CargaNivel13()
-	{
+	public void CargaNivel13()  //Esta y las sucesivas fuciones se encargan de cargar la escena que contiene los niveles 1 hasta el cinco del mundo 3
+    {
 		//IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
 		SceneManager.LoadScene("Mudo3_Nivel1");
 	}
