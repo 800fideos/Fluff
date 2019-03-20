@@ -46,6 +46,7 @@ public class GameController : MonoBehaviour
 		//IMPORTANTE PONER ARRIBA using UnityEngine.SceneManagement;//
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
 		pausa = false;
+        CuentaPelusas.contadorPelusas = 0;
 	}
 
 	public void IniciarJuego(){
