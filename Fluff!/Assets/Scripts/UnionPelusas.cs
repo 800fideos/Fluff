@@ -45,6 +45,7 @@ public class UnionPelusas : MonoBehaviour
         padre = new GameObject();
         padre.AddComponent<Movimiento>();
         padre.AddComponent<UnionPadres>();
+        padre.AddComponent<CuentaPelusas>();
         padre.gameObject.tag = "Unido";
         AniadirRigidBodyAPadre();
         AniadirAudioSourceAPadre();
@@ -56,7 +57,7 @@ public class UnionPelusas : MonoBehaviour
     private void AniadirAudioSourceAPadre()
     {
         padre.AddComponent<AudioSource>();
-        padre.GetComponent<Movimiento>().sonidoChoque = GetComponent<Movimiento>().sonidoChoque;
+        //padre.GetComponent<Movimiento>().sonidoChoque = GetComponent<Movimiento>().sonidoChoque;
     }
 
     private void AniadirRigidBodyAPadre()
@@ -156,7 +157,6 @@ public class UnionPelusas : MonoBehaviour
 
     private void LanzarRaycastsAlrededor()
     {
-        
         // 0 Arriba
         // 1 derecha
         // 2 Abajo
@@ -186,12 +186,13 @@ public class UnionPelusas : MonoBehaviour
                 col.gameObject.GetComponent<UnionPelusas>() != null &&
                 !col.gameObject.GetComponent<UnionPelusas>().pelusaUnida)
             {
-                if (rb != null)
+                if (rb != null )
                 { // Primera vez que se une
                     IniciarUniones();
 					CuentaPelusas.contadorPelusas--;
 					Debug.Log (CuentaPelusas.contadorPelusas);
                 }
+         
                 UnirPelusa(col);
                 LanzarRaycastsAlrededor();
 				CuentaPelusas.contadorPelusas--;
@@ -203,12 +204,9 @@ public class UnionPelusas : MonoBehaviour
             {
                 if (transform.parent != null) {
                     transform.parent.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                }
-                    
+                }     
             }
-
             RevisarPelusasHijas();
-
         }
     }
 
