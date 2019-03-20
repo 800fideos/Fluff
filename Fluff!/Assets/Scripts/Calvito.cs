@@ -28,6 +28,7 @@ public class Calvito : MonoBehaviour
 			peluso.GetComponent <Rigidbody2D> ().velocity = rb.velocity;
 			Destroy (gameObject);
 			Destroy (col.gameObject);
+            CuentaPelusas.contadorPelusas--;
 
 		}
 	}

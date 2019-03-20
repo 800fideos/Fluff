@@ -45,17 +45,16 @@ public class UnionPadres : MonoBehaviour
         CreaPadreDePadres();
         transform.parent = padreDePadres.transform;
         OtroPadre.transform.parent = padreDePadres.transform;
-        OtroPadre.gameObject.GetComponent<UnionPelusas>().pelusaUnida = true;
-        OtroPadre.gameObject.GetComponent<UnionPelusas>().padre = padreDePadres;
         OtroPadre.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         OtroPadre.transform.gameObject.tag = "Unido";
     }
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.transform.parent != transform && rb != null)
+        if (col.transform.parent != transform && rb != null && col.gameObject.layer == LayerMask.NameToLayer("Pelusas"))
         {
             UnirPadres(col.gameObject);
+            CuentaPelusas.contadorPelusas--;
         }
     }
 }
