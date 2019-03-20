@@ -13,11 +13,12 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (CuentaPelusas.contadorPelusas == 0) {
+		if (CuentaPelusas.contadorPelusas == 0 ) {
 
             panel.SetActive (true);
 			Debug.Log ("Estrellas " + GameController.estrellas);
 			panel.transform.GetChild(0).GetComponent<Animator> ().SetInteger ("estrellas", GameController.estrellas);
+
          
 
         }
