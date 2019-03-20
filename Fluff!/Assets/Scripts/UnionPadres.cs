@@ -1,11 +1,20 @@
-﻿using System.Collections;
+﻿/* UnionPelusas.cs
+ * 19/03/2019
+ * Versión: 0.3
+ * Realizado por @monchburg (Ramón González)
+ * Comentado por @monchburg (Ramón González)
+ * Script que controla la unión entre padres. El funcionamiento es el mismo que el de unión pelusas, pero con afectando a los padres solo.
+ * Se comentará el pequeño cambio que hay en los dos scripts.
+ * */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class UnionPadres : MonoBehaviour
 {
     Rigidbody2D rb;
-    GameObject padreDePadres;
+    GameObject padreDePadres; 
 
     void Start()
     {
@@ -51,6 +60,7 @@ public class UnionPadres : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
+        // La condición que cambia es que el padre con el que colisiona no sea el mismo. 
         if (col.transform.parent != transform && rb != null && col.gameObject.layer == LayerMask.NameToLayer("Pelusas"))
         {
             UnirPadres(col.gameObject);

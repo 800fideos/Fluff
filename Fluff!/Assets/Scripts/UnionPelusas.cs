@@ -1,4 +1,4 @@
-﻿/* Movimiento.cs
+﻿/* UnionPelusas.cs
  * 19/03/2019
  * Versión: 0.3
  * Realizado por @monchburg (Ramón González)
