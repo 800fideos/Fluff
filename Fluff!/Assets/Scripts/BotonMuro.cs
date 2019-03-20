@@ -38,7 +38,7 @@ public class BotonMuro: MonoBehaviour
 	{
 		if (col.gameObject.layer == LayerMask.NameToLayer ("Pelusas")) // Si el objeto está en la capa "Pelusas"
         {
-			animacion.SetBool ("pulsado", false); // Se activa la animación "pulsado"
+			animacion.SetBool ("pulsado", false); // Se desactiva la animación "pulsado"
 			Muro.bajado = false; // Se modifica el booleano del script del muro a falso
 
         }

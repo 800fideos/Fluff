@@ -39,6 +39,7 @@ public class GameController : MonoBehaviour
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		pausa = false;
         CuentaPelusas.contadorPelusas = 0;
+        Muro.bajado = false;
 	}
 
 	public void Siguiente()
