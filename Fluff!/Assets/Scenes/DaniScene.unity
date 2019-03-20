@@ -414,7 +414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -349.0052, y: -736.01105}
+  m_AnchoredPosition: {x: -349.0052, y: -672}
   m_SizeDelta: {x: -920.70013, y: -1623.8003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &100797710
@@ -789,7 +789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &368868519
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1423,10 +1423,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 52c25e092d1ed3242b384c2878d4b27a, type: 3}
-    m_FontSize: 135
+    m_FontSize: 85
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 140
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1435,7 +1435,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Daniel Jim\xE9nez\nRamon Gonz\xE1lez\nAna Casero\nOufan Zhan\nPablo Jim\xE9nez\nMiguel
-    Gil"
+    Gil\n\xC1ngela Ruiz\nSara Mart\xEDn\nPablo Cartamil\nEnrique Angu\xEDs\nSim\xF3n
+    Garc\xEDa\nMario Jim\xE9nez"
 --- !u!222 &1410127817
 CanvasRenderer:
   m_ObjectHideFlags: 0
