@@ -55,6 +55,7 @@ public class Clonador : MonoBehaviour
 		}
 
 		col.gameObject.SetActive (false); // Desactivamos la pelusa que entra en el clonador en vez de eliminarla para que los clones tengan los componentes del original
+        CuentaPelusas.contadorPelusas--;
 	}
 
     // Función que se encarga de crear los clones de las pelusas 
